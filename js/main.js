@@ -144,17 +144,11 @@
       submitBtn.disabled    = true;
       submitBtn.textContent = 'Sending…';
 
-      // Simulate async submission
+      // Simulate async submission, then redirect to thank-you page
       setTimeout(function () {
         contactForm.reset();
-        submitBtn.disabled    = false;
-        submitBtn.innerHTML   = '<i class="fas fa-paper-plane"></i> Send Message';
-        successMsg.removeAttribute('hidden');
-        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-        setTimeout(function () {
-          successMsg.setAttribute('hidden', '');
-        }, 8000);
+        // Redirect to the dedicated thank-you confirmation page
+        window.location.href = 'thank-you.html';
       }, 1200);
     });
 

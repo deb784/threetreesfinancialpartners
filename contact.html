@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us &amp; Schedule a Call — Three Trees Retirement Partners</title>
+  <meta name="description" content="Schedule a free 30-minute retirement planning call with Michael or Stephanie Cooley of Three Trees Retirement Partners. No obligation. No products sold." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(145deg, #162e24 0%, #1e3a2f 55%, #254d3e 100%);
+      padding: 150px 0 80px; text-align: center; position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 110%, rgba(176,149,86,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .page-hero .container { position: relative; z-index: 1; }
+    .page-hero-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: #c9ac6a; margin-bottom: 18px; display: block; }
+    .page-hero-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 20px; }
+    .page-hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.68); max-width: 640px; margin: 0 auto; line-height: 1.8; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; justify-content: center; margin-bottom: 22px; font-size: 0.78rem; color: rgba(255,255,255,0.45); }
+    .breadcrumb a { color: #c9ac6a; transition: color 0.2s; }
+    .breadcrumb a:hover { color: #fff; }
+    .breadcrumb i { font-size: 0.6rem; }
+    /* Contact page specific: promise bar */
+    .contact-promises {
+      background: var(--cream);
+      padding: 40px 0;
+      border-bottom: 1px solid var(--cream-border);
+    }
+    .contact-promises-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 40px;
+    }
+    .contact-promise-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--body-text);
+      font-weight: 600;
+    }
+    .contact-promise-item i {
+      color: var(--gold);
+      font-size: 1rem;
+    }
+    /* Map/address card */
+    .contact-address-card {
+      background: var(--cream);
+      border: 1px solid var(--cream-border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      margin-top: 32px;
+    }
+    .contact-address-card h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1rem;
+      color: var(--forest-green);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .contact-address-card h4 i { color: var(--gold); }
+    .contact-address-card p {
+      font-size: 0.93rem;
+      color: var(--muted-text);
+      line-height: 1.75;
+    }
+    .contact-map-placeholder {
+      width: 100%;
+      height: 180px;
+      background: #e8e4dc;
+      border-radius: 10px;
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #999;
+      font-size: 0.85rem;
+    }
+    .contact-map-placeholder i { font-size: 1.6rem; color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="framework.html">The Framework</a></li>
+        <li><a href="triple-shield.html">Triple Shield</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="seminars.html">Seminars</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="contact.html" class="nav-cta-btn active">Schedule a Call</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Contact Us</span>
+      </nav>
+      <span class="page-hero-eyebrow">Take the First Step</span>
+      <h1 class="page-hero-title">Schedule a Free 30-Minute Call</h1>
+      <p class="page-hero-sub">No pitch. No pressure. No obligation. Just an honest conversation about your retirement.</p>
+    </div>
+  </section>
+
+  <!-- PROMISE BAR -->
+  <div class="contact-promises">
+    <div class="container">
+      <div class="contact-promises-grid">
+        <div class="contact-promise-item"><i class="fas fa-check-circle"></i> 100% Free</div>
+        <div class="contact-promise-item"><i class="fas fa-check-circle"></i> No products sold</div>
+        <div class="contact-promise-item"><i class="fas fa-check-circle"></i> No commitment required</div>
+        <div class="contact-promise-item"><i class="fas fa-check-circle"></i> Fiduciary advisors</div>
+        <div class="contact-promise-item"><i class="fas fa-check-circle"></i> In-person or virtual</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCHEDULE SECTION -->
+  <section id="schedule" class="schedule-section">
+    <div class="container schedule-container">
+      <div class="schedule-text">
+        <span class="section-label">Book Your Call</span>
+        <h2 class="section-heading">Pick a Time That Works for You</h2>
+        <p class="schedule-body">
+          There's no pitch, no pressure, and no obligation. We'll spend 30 minutes understanding
+          where you are, where you want to go, and whether the Three Trees Framework is the right
+          fit for your retirement.
+        </p>
+        <ul class="schedule-list">
+          <li><i class="fas fa-check"></i> 100% Free — no cost, no commitment</li>
+          <li><i class="fas fa-check"></i> No products will be sold on this call</li>
+          <li><i class="fas fa-check"></i> Honest assessment of your retirement readiness</li>
+          <li><i class="fas fa-check"></i> Learn if the Three Trees Framework is right for you</li>
+        </ul>
+      </div>
+      <div class="schedule-calendar">
+        <div class="calendly-placeholder">
+          <div class="calendly-header">
+            <img src="images/logo-square-dark.png" alt="Three Trees Logo" class="calendly-logo" />
+            <h3>Pick a Time That Works for You</h3>
+          </div>
+          <div class="calendly-embed-wrapper">
+            <div class="calendly-mock">
+              <p class="calendly-mock-text">Calendly Scheduling Widget</p>
+              <p class="calendly-mock-sub">Replace with your Calendly embed code</p>
+              <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="btn btn-gold calendly-btn">
+                <i class="fas fa-calendar-alt"></i> Book Your Free Call
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <span class="section-label-light">Get in Touch</span>
+        <h2 class="section-heading-light">Prefer to Send a Message?</h2>
+        <p class="contact-body">
+          Whether you have a quick question or want to discuss your situation in detail,
+          we're here to help. Send us a message and we'll respond within one business day.
+        </p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:5550000000" style="color:inherit;">(555) 000-0000</a>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:hello@threetreesretirement.com" style="color:inherit;">hello@threetreesretirement.com</a>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>825 Victors Way, Ann Arbor, MI</span>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fas fa-globe"></i>
+            <span>Serving clients nationwide</span>
+          </div>
+        </div>
+        <!-- Address card with map placeholder -->
+        <div class="contact-address-card">
+          <h4><i class="fas fa-building"></i> Our Office</h4>
+          <p>825 Victors Way<br />Ann Arbor, Michigan<br />In-person &amp; virtual meetings available.</p>
+          <div class="contact-map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Map embed coming soon</span>
+          </div>
+        </div>
+      </div>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first_name" required placeholder="First Name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last_name" required placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="retirement-timeline">When Do You Plan to Retire?</label>
+          <select id="retirement-timeline" name="retirement_timeline">
+            <option value="">Select a timeline...</option>
+            <option value="already-retired">Already Retired</option>
+            <option value="1-2-years">Within 1–2 Years</option>
+            <option value="3-5-years">3–5 Years</option>
+            <option value="5-10-years">5–10 Years</option>
+            <option value="10-plus-years">10+ Years</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="assets">Approximate Investable Assets</label>
+          <select id="assets" name="assets">
+            <option value="">Select a range...</option>
+            <option value="under-500k">Under $500,000</option>
+            <option value="500k-1m">$500,000 – $1 Million</option>
+            <option value="1m-2m">$1M – $2 Million</option>
+            <option value="2m-plus">$2 Million+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Question or Message *</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Tell us a little about your situation..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold form-submit-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-disclaimer">
+          Your information is never shared or sold. By submitting this form you agree to be contacted by Three Trees Retirement Partners.
+        </p>
+        <div id="form-success" class="form-success-msg" hidden>
+          <i class="fas fa-check-circle"></i> Thank you! We'll be in touch within one business day.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
+        <p class="footer-tagline">Structured retirement income for the people who've earned it.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Our Approach</h4>
+        <ul class="footer-links">
+          <li><a href="framework.html">The Three Trees</a></li>
+          <li><a href="triple-shield.html">The Triple Shield</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Company</h4>
+        <ul class="footer-links">
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="seminars.html">Free Seminars</a></li>
+          <li><a href="faqs.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Schedule a Free Call</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:5550000000">(555) 000-0000</a></li>
+          <li><a href="mailto:hello@threetreesretirement.com">hello@threetreesretirement.com</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold footer-cta-btn">Schedule a Call</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-legal container">
+      <p class="footer-legal-text">&copy; 2026 Three Trees Retirement Partners. All rights reserved. Investment advisory services offered through Altitude Capital Management, a Registered Investment Advisor. Past performance does not guarantee future results. All investments involve risk.</p>
+      <div class="footer-legal-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

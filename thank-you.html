@@ -1,312 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You — Three Trees Retirement Partners</title>
-  <meta name="description" content="Thank you for contacting Three Trees Retirement Partners. We'll be in touch shortly." />
-  <!-- Prevent search engines from indexing this confirmation page -->
-  <meta name="robots" content="noindex, nofollow" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* ── Thank You page styles ── */
-    .thankyou-hero {
-      background: linear-gradient(145deg, #162e24 0%, #1e3a2f 55%, #254d3e 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 140px 20px 80px;
-      position: relative;
-      overflow: hidden;
-    }
-    /* Subtle tree silhouette decorative BG */
-    .thankyou-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 40% at 15% 80%, rgba(176,149,86,0.08) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 50% at 85% 20%, rgba(176,149,86,0.06) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .thankyou-content {
-      position: relative;
-      z-index: 1;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-    /* Checkmark circle */
-    .thankyou-icon {
-      width: 88px;
-      height: 88px;
-      background: rgba(176,149,86,0.15);
-      border: 3px solid #b09556;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 32px;
-      animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-    }
-    .thankyou-icon i {
-      font-size: 2.2rem;
-      color: #c9ac6a;
-    }
-    @keyframes popIn {
-      0%   { opacity: 0; transform: scale(0.5); }
-      100% { opacity: 1; transform: scale(1); }
-    }
-    .thankyou-eyebrow {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: #c9ac6a;
-      margin-bottom: 18px;
-      display: block;
-      animation: fadeUp 0.5s 0.2s ease both;
-    }
-    .thankyou-headline {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      font-weight: 700;
-      color: #ffffff;
-      line-height: 1.18;
-      margin-bottom: 22px;
-      animation: fadeUp 0.5s 0.3s ease both;
-    }
-    .thankyou-headline em {
-      font-style: italic;
-      color: #c9ac6a;
-    }
-    .thankyou-subtext {
-      font-size: 1.05rem;
-      line-height: 1.85;
-      color: rgba(255,255,255,0.72);
-      margin-bottom: 40px;
-      animation: fadeUp 0.5s 0.4s ease both;
-    }
-    @keyframes fadeUp {
-      0%   { opacity: 0; transform: translateY(22px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    /* What happens next card */
-    .thankyou-steps {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(201,172,106,0.25);
-      border-radius: 16px;
-      padding: 32px 36px;
-      margin-bottom: 36px;
-      text-align: left;
-      animation: fadeUp 0.5s 0.5s ease both;
-    }
-    .thankyou-steps-heading {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #c9ac6a;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.8rem;
-    }
-    .thankyou-step-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .thankyou-step {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      color: rgba(255,255,255,0.82);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-    .thankyou-step-num {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      background: #b09556;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.78rem;
-      color: #ffffff;
-      margin-top: 1px;
-    }
-    /* CTA buttons */
-    .thankyou-ctas {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-      animation: fadeUp 0.5s 0.6s ease both;
-    }
-    /* Contact info strip */
-    .thankyou-contact-strip {
-      margin-top: 50px;
-      padding-top: 30px;
-      border-top: 1px solid rgba(255,255,255,0.12);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 28px;
-      animation: fadeUp 0.5s 0.7s ease both;
-    }
-    .thankyou-contact-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255,255,255,0.5);
-      font-size: 0.85rem;
-      text-decoration: none;
-      transition: color 0.25s;
-    }
-    .thankyou-contact-item i {
-      color: #b09556;
-      font-size: 0.85rem;
-    }
-    .thankyou-contact-item:hover { color: rgba(255,255,255,0.85); }
-    /* Responsive */
-    @media (max-width: 600px) {
-      .thankyou-steps { padding: 24px 20px; }
-      .thankyou-ctas { flex-direction: column; align-items: center; }
-      .thankyou-ctas .btn { width: 100%; max-width: 300px; justify-content: center; }
-    }
-  </style>
+  <meta name="description" content="Thank you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-shell">
 
-  <!-- HEADER -->
-  <header id="site-header">
-    <nav class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html#framework">The Framework</a></li>
-        <li><a href="index.html#triple-shield">Triple Shield</a></li>
-        <li><a href="index.html#team">Our Team</a></li>
-        <li><a href="index.html#seminars">Seminars</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
-        <li><a href="index.html#schedule" class="nav-cta-btn">Schedule a Call</a></li>
+<header class="site-header">
+  <div class="container nav">
+    <a class="nav-logo" href="index.html"><img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners"></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links"><li><a class="" href="framework.html">About Us</a></li><li><a class="" href="tax-strategy.html">Tax Strategy</a></li><li><a class="" href="triple-shield.html">Triple Shield</a></li><li><a class="" href="seminars.html">Seminars</a></li><li><a class="" href="faqs.html">FAQ</a></li><li><a class="active" href="contact.html">Contact Us</a></li><li><a class="nav-cta" href="contact.html#book">Schedule a Consultation</a></li></ul>
+  </div>
+</header>
+
+
+<main>
+  <section class="page-hero bg-ivory text-center"><div class="container narrow"><div class="small-label">Thank You</div><h1>Thank You</h1><p class="lead">We'll respond within one business day.</p><a class="btn btn-forest" href="index.html">Return Home</a></div></section>
+</main>
+
+
+<footer class="footer bg-charcoal">
+  <div class="container footer-grid">
+    <div>
+      <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" style="height:56px;width:auto;margin-bottom:16px;">
+      <p>Retirement income planning for the distribution phase. Serving pre-retirees and retirees in Ann Arbor and Washtenaw County, Michigan.</p>
+    </div>
+    <div>
+      <h4>NAVIGATION</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">About Us</a></li>
+        <li><a href="tax-strategy.html">Tax Strategy</a></li>
+        <li><a href="triple-shield.html">The Triple Shield</a></li>
+        <li><a href="seminars.html">Seminars</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
-
-  <!-- THANK YOU HERO -->
-  <section class="thankyou-hero" aria-labelledby="thankyou-heading">
-    <div class="thankyou-content">
-
-      <!-- Icon -->
-      <div class="thankyou-icon" aria-hidden="true">
-        <i class="fas fa-check"></i>
-      </div>
-
-      <!-- Heading -->
-      <span class="thankyou-eyebrow">Message Received</span>
-      <h1 class="thankyou-headline" id="thankyou-heading">
-        Thank you — <em>we'll be in touch</em> soon.
-      </h1>
-      <p class="thankyou-subtext">
-        Your message has been sent successfully. A member of our team will review it and reach out to you personally — typically within <strong style="color:rgba(255,255,255,0.9);">1&ndash;2 business days</strong>.
-      </p>
-
-      <!-- What happens next -->
-      <div class="thankyou-steps">
-        <p class="thankyou-steps-heading"><i class="fas fa-list-ol" style="margin-right:7px;"></i> What Happens Next</p>
-        <ol class="thankyou-step-list">
-          <li class="thankyou-step">
-            <span class="thankyou-step-num">1</span>
-            <span>We review your message and match you with the right advisor — Michael or Stephanie Cooley, based on your situation.</span>
-          </li>
-          <li class="thankyou-step">
-            <span class="thankyou-step-num">2</span>
-            <span>You'll receive a personal reply via email or phone — whichever you prefer — within 1–2 business days.</span>
-          </li>
-          <li class="thankyou-step">
-            <span class="thankyou-step-num">3</span>
-            <span>We'll schedule your complimentary retirement income planning consultation at a time that works for you.</span>
-          </li>
-        </ol>
-      </div>
-
-      <!-- CTAs -->
-      <div class="thankyou-ctas">
-        <a href="index.html#schedule" class="btn btn-gold">
-          <i class="fas fa-calendar-alt"></i> Book a Call Now
-        </a>
-        <a href="index.html" class="btn btn-outline-light">
-          <i class="fas fa-home"></i> Return to Home
-        </a>
-      </div>
-
-      <!-- Contact strip -->
-      <div class="thankyou-contact-strip">
-        <a href="tel:8654077357" class="thankyou-contact-item">
-          <i class="fas fa-phone"></i> (865) 407-7357
-        </a>
-        <a href="mailto:info@3treesrp.com" class="thankyou-contact-item">
-          <i class="fas fa-envelope"></i> info@3treesrp.com
-        </a>
-        <span class="thankyou-contact-item">
-          <i class="fas fa-map-marker-alt"></i> 825 Victors Way, Ann Arbor, MI
-        </span>
-      </div>
-
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col footer-brand">
-        <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
-        <p class="footer-tagline">"Retirement income planning done right."</p>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Legal</h4>
-        <ul class="footer-links">
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="accessibility.html">Accessibility</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Navigate</h4>
-        <ul class="footer-links">
-          <li><a href="index.html#framework">The Framework</a></li>
-          <li><a href="index.html#team">Our Team</a></li>
-          <li><a href="index.html#schedule">Schedule a Call</a></li>
-        </ul>
-      </div>
+    <div>
+      <h4>RISK ASSESSMENT</h4>
+      <a class="btn btn-gold risk-btn" href="https://app.onpointeriskanalyzer.com/entryform/FD3D33E3-1408-4E26-8DBF-084356C13E58" target="_blank" rel="noopener">GET YOUR RISK SCORE</a>
     </div>
-    <div class="footer-divider"></div>
-    <div class="footer-legal container">
-      <p class="footer-legal-text">&copy; 2026 Three Trees Retirement Partners. All rights reserved. Investment advisory services offered through Altitude Capital Management, a Registered Investment Advisor.</p>
-      <div class="footer-legal-links">
+    <div>
+      <h4>Connect</h4>
+      <div class="text-link-list">
+        <a href="contact.html#book">Book a Meeting</a>
+        <span>825 Victors Way, Ann Arbor</span>
+        <a href="tel:7342122525">(734) 212-2525</a>
+        <a href="mailto:info@3treesrp.com">info@3treesrp.com</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-        <a href="accessibility.html">Accessibility</a>
+        <a href="terms.html">ADV Part 2 / Disclosures</a>
       </div>
     </div>
-  </footer>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 ThreeTrees Retirement Partners. All rights reserved.</p>
+    <p class="legal-copy">Investment advice offered through ALTITUDE CAPITAL MANAGEMENT LLC, a Securities and Exchange Commission registered investment advisor able to provide investment advice in states where it is registered, exempt, or excluded from registration. Content contained herein should not be construed as an offer or solicitation for investment advice or for the purchase or sale of any security, insurance, or other investment product. Investments involve the risk of loss, including possible loss of principal. Please consult with a qualified financial, tax, accounting, or legal professional before implementing any ideas or strategies discussed here. Content provided is obtained from sources believed to be reliable but cannot be guaranteed as to its accuracy or completeness.</p>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>

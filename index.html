@@ -1,214 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Three Trees Retirement Partners — Retirement Income Planning</title>
-  <meta name="description" content="Retirement income planning for Ann Arbor-area pre-retirees and retirees.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Three Trees Retirement Partners specializes in structured retirement income planning using the Triple Shield Framework — protecting against market risk, tax risk, and spending risk." />
+  <meta name="keywords" content="retirement income planning, Three Trees, Triple Shield, Roth conversion, retirement advisor, fiduciary advisor" />
+  <meta property="og:title" content="Three Trees Retirement Partners" />
+  <meta property="og:description" content="Imagine waking up in retirement knowing your income is there, no matter what the market does." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Home-page section preview cards ── */
+    .home-sections {
+      background: var(--cream);
+      padding: var(--section-pad) 0;
+    }
+    .home-sections-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .home-sections-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+    .home-section-card {
+      background: #fff;
+      border: 1px solid var(--cream-border);
+      border-radius: 18px;
+      padding: 36px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .home-section-card:hover {
+      box-shadow: 0 16px 50px rgba(0,0,0,0.12);
+      transform: translateY(-4px);
+    }
+    .home-section-card-icon {
+      width: 56px; height: 56px;
+      background: var(--forest-green);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .home-section-card-icon i { color: var(--gold-light); font-size: 1.4rem; }
+    .home-section-card-label {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 10px; display: block;
+    }
+    .home-section-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--forest-green);
+      margin-bottom: 12px; line-height: 1.25;
+    }
+    .home-section-card p {
+      font-size: 0.93rem; line-height: 1.8;
+      color: var(--muted-text); flex: 1;
+      margin-bottom: 22px;
+    }
+    .home-section-card-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      color: var(--forest-green);
+      transition: gap 0.2s ease, color 0.2s ease;
+    }
+    .home-section-card:hover .home-section-card-link {
+      gap: 13px; color: var(--gold);
+    }
+
+    /* ── Who We Serve strip (on home) ── */
+    .home-identity {
+      background: var(--white);
+    }
+
+    /* ── Testimonials on home ── */
+    .home-testimonials { background: var(--cream); }
+
+    @media (max-width: 900px) {
+      .home-sections-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 580px) {
+      .home-sections-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-<div class="page-shell">
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="nav-logo" href="index.html"><img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners"></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <ul class="nav-links"><li><a class="" href="framework.html">About Us</a></li><li><a class="" href="tax-strategy.html">Tax Strategy</a></li><li><a class="" href="triple-shield.html">Triple Shield</a></li><li><a class="" href="seminars.html">Seminars</a></li><li><a class="" href="faqs.html">FAQ</a></li><li><a class="" href="contact.html">Contact Us</a></li><li><a class="nav-cta" href="contact.html#book">Schedule a Consultation</a></li></ul>
-  </div>
-</header>
-
-
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <div class="small-label">Three Trees Retirement Partners</div>
-        <h1>Plan for the Life You've Worked Hard to Achieve</h1>
-        <p class="lead">Tax-efficient retirement income planning for Ann Arbor-area pre-retirees and retirees with $1M to $3M in savings.</p>
-        <div class="credential-line">Michael &amp; Stephanie Cooley<br>CHFC® RICP® NSSA® | M.ED.</div>
-        <div class="hero-buttons">
-          <a class="btn btn-gold" href="contact.html#book">Schedule a Consultation</a>
-          <a class="btn btn-outline" href="seminars.html">Attend a Free Seminar</a>
-        </div>
-      </div>
-      <div class="photo-frame gold"><img src="images/michael-stephanie-cooley.jpg" alt="Michael and Stephanie Cooley"></div>
-    </div>
-  </section>
-
-  <section class="section bg-ivory">
-    <div class="container split-grid">
-      <div class="photo-frame"><img src="images/who-we-serve-couple.jpg" alt="Three Trees client meeting"></div>
-      <div>
-        <div class="small-label">About Us</div>
-        <h2>Planning Today, Preparing for Tomorrow, Prospering the Future</h2>
-        <p>At ThreeTrees Retirement Partners, we believe retirement is about more than just having enough money, it's about living the life you've been working toward for decades.</p>
-        <p>We help people transition into and through retirement with both financial confidence and personal clarity. Whether you're five years from retirement or already enjoying it, we guide you through the financial decisions AND the life decisions that make retirement meaningful</p>
-        <p>Most of our clients are between 55 and 70, have saved $1-3 million, and want to know their money will last while living purposefully and fully in this next chapter.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-forest">
-    <div class="container text-center">
-      <div class="small-label">Framework</div>
-      <h2>The Three Trees Framework</h2>
-      <p class="narrow lead">A structured approach to retirement income — so you always know where your next paycheck is coming from.</p>
-      <p class="narrow">Most retirement plans treat your savings as a single pile of money to draw from. We organize yours into three distinct time horizons — three trees — each with its own purpose, its own asset type, and its own role in producing reliable income</p>
-      <div class="framework-stage"><img src="images/three-trees-infographic.png" alt="The Three Trees Framework illustration"></div>
-    </div>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container">
-      <div class="grid-3">
-        <article class="tree-card card">
-          <div class="tree-art"><img src="images/tree-now.png" alt="Now Tree"></div>
-          <div class="tree-copy">
-            <div class="tree-kicker">Tree One</div>
-            <h3>Now Tree</h3>
-            <div class="tree-subtitle">Year 1 + Permanent Emergency Fund</div>
-            <p>Cash &amp; money market funds. Always liquid, always available, immune to market volatility. This is the year you're living right now.</p>
-          </div>
-        </article>
-        <article class="tree-card card">
-          <div class="tree-art"><img src="images/tree-soon.png" alt="Soon Tree"></div>
-          <div class="tree-copy">
-            <div class="tree-kicker">Tree Two</div>
-            <h3>Soon Tree</h3>
-            <div class="tree-subtitle">Years 2 – 10</div>
-            <p>A laddered foundation built to deliver dependable income for the next decade — designed to participate in market upside while protecting your principal from market downturns. The result: a stable income foundation that doesn't sacrifice long-term growth.</p>
-          </div>
-        </article>
-        <article class="tree-card card">
-          <div class="tree-art"><img src="images/tree-later.png" alt="Later Tree"></div>
-          <div class="tree-copy">
-            <div class="tree-kicker">Tree Three</div>
-            <h3>Later Tree</h3>
-            <div class="tree-subtitle">Years 11 – 40+</div>
-            <p>Tactical growth investments that have time to weather market cycles. Manages long-term wealth and refills the Soon Tree at favorable market moments.</p>
-          </div>
-        </article>
-      </div>
-      <div class="tree-note bg-forest">This synergy framing is essential. Without it, prospects mentally treat Soon and Later as separate, which misrepresents how the framework works.</div>
-    </div>
-  </section>
-  <section class="section bg-ivory">
-    <div class="container split-grid">
-      <div>
-        <div class="small-label">Credentials</div>
-        <h2>Built for Retirement Income</h2>
-        <p>The credentials behind ThreeTrees were chosen specifically for this work. Michael holds three designations from The American College of Financial Services — each focused on the planning challenges that matter once you stop earning a paycheck.</p>
-        <p><strong>ChFC® — Chartered Financial Consultant</strong><br><strong>RICP® — Retirement Income Certified Professional</strong><br><strong>NSSA® — National Social Security Advisor</strong></p>
-        <p>This is a different toolkit than the generalist CFP credential. It's purpose-built for the question most retirement advisors don't fully solve: how to turn what you've saved into reliable, tax-efficient income that lasts.</p>
-      </div>
-      <div class="triple-shield-graphic"><img src="images/triple-shield-graphic.png" alt="Triple Shield graphic"></div>
-    </div>
-  </section>
-
-  <section class="section bg-forest">
-    <div class="container split-grid">
-      <div>
-        <div class="small-label">Social Security</div>
-        <h2>Get Your Social Security Decision Right</h2>
-        <p>Social Security is one of the most important financial decisions you'll make in retirement—and most people get it wrong. Filing at the wrong time can cost you tens of thousands of dollars over your lifetime.</p>
-        <p>But it's not just about the numbers. When you file affects your cash flow, your flexibility, and your peace of mind in those critical early retirement years.</p>
-        <p>We provide personalized Social Security filing analysis within the context of your complete retirement picture—not just "what maximizes dollars" but "what supports the life you want to live."</p>
-      </div>
-      <div class="panel">
-        <div class="small-label">Topics we help you navigate</div>
-        <ul class="checklist">
-          <li>When to claim for maximum lifetime benefit</li>
-          <li>How spousal and survivor benefits work</li>
-          <li>Tax implications of Social Security income</li>
-        </ul>
-        <div style="margin-top:26px"><a class="btn btn-gold" href="seminars.html">Attend OUR SOCIAL SECURITY Seminar</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container split-grid">
-      <div>
-        <div class="small-label">Who We Serve</div>
-        <h2>Who We Serve</h2>
-        <p>Most of our clients are between 55 and 70, have saved $1 million to $3 million, and want clear answers to three questions:</p>
-        <div class="question-list">
-          <div class="question-chip">When can I retire?</div>
-          <div class="question-chip">Will my money last?</div>
-          <div class="question-chip">How do I keep more of what I've earned from going to taxes?</div>
-        </div>
-      </div>
-      <div class="photo-frame"><img src="images/who-we-serve-couple.jpg" alt="Who We Serve"></div>
-    </div>
-  </section>
-
-  <section class="section bg-ivory">
-    <div class="container bio-grid">
-      <div class="photo-frame"><img src="images/michael-cooley.jpg" alt="Michael Cooley"></div>
-      <div>
-        <div class="small-label">Meet Michael Cooley ChFC®, RICP®, NSSA®</div>
-        <h2>Meet Michael Cooley ChFC®, RICP®, NSSA®</h2>
-        <p>Michael is the founder and lead advisor at ThreeTrees Retirement Partners. He brings advanced retirement income credentials and a structured framework that helps clients see exactly how their financial life works — both today and over the decades ahead.</p>
-        <a class="btn btn-gold" href="contact.html#book">Schedule a Meeting</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band bg-forest">
-    <div class="container">
-      <h2>Ready to See What Your Retirement Plan Should Look Like?</h2>
-      <p>Schedule a complimentary consultation to explore how the Three Trees framework applies to your specific situation. Most first conversations take 30 minutes.</p>
-      <a class="btn btn-outline" href="contact.html#book">Schedule a Consultation</a>
-    </div>
-  </section>
-</main>
-
-
-<footer class="footer bg-charcoal">
-  <div class="container footer-grid">
-    <div>
-      <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" style="height:56px;width:auto;margin-bottom:16px;">
-      <p>Retirement income planning for the distribution phase. Serving pre-retirees and retirees in Ann Arbor and Washtenaw County, Michigan.</p>
-    </div>
-    <div>
-      <h4>NAVIGATION</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="framework.html">About Us</a></li>
-        <li><a href="tax-strategy.html">Tax Strategy</a></li>
-        <li><a href="triple-shield.html">The Triple Shield</a></li>
+  <!-- ============================================================
+       1. HEADER / NAVIGATION
+       ============================================================ -->
+  <header id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="framework.html">The Framework</a></li>
+        <li><a href="triple-shield.html">Triple Shield</a></li>
+        <li><a href="team.html">Our Team</a></li>
         <li><a href="seminars.html">Seminars</a></li>
         <li><a href="faqs.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta-btn">Schedule a Call</a></li>
       </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       2. HERO SECTION
+       ============================================================ -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-container">
+
+      <!-- LEFT: headline + copy + CTAs -->
+      <div class="hero-content">
+        <p class="hero-eyebrow">Three Trees Retirement Partners</p>
+        <h1 class="hero-headline">
+          Imagine waking up in retirement
+          <em class="hero-knowing">knowing</em>
+          your income is there, no matter
+          what the market does.
+        </h1>
+        <p class="hero-subtext">
+          That's not luck. That's structure. Three Trees Retirement Partners
+          builds retirement income plans that separate your money into
+          three distinct horizons — so your lifestyle is always funded,
+          your growth assets are always protected, and you never have to
+          worry about running out.
+        </p>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-gold">
+            <i class="fas fa-calendar-alt"></i> Schedule a Free Call
+          </a>
+          <a href="framework.html" class="btn btn-outline-light">
+            See The Framework
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: photo + centered credentials -->
+      <div class="hero-image">
+        <div class="hero-photo-wrap">
+          <img
+            src="images/michael-stephanie-cooley.jpg"
+            alt="Michael and Stephanie Cooley — Three Trees Retirement Partners"
+          />
+        </div>
+        <div class="hero-image-caption">
+          <span class="cred-name">Michael &amp; Stephanie Cooley</span>
+          <span class="cred-badges">ChFC® &nbsp;&nbsp; RICP® &nbsp;&nbsp; NSSA® &nbsp;&nbsp; M.Ed.</span>
+        </div>
+      </div>
+
     </div>
-    <div>
-      <h4>RISK ASSESSMENT</h4>
-      <a class="btn btn-gold risk-btn" href="https://app.onpointeriskanalyzer.com/entryform/FD3D33E3-1408-4E26-8DBF-084356C13E58" target="_blank" rel="noopener">GET YOUR RISK SCORE</a>
-    </div>
-    <div>
-      <h4>Connect</h4>
-      <div class="text-link-list">
-        <a href="contact.html#book">Book a Meeting</a>
-        <span>825 Victors Way, Ann Arbor</span>
-        <a href="tel:7342122525">(734) 212-2525</a>
-        <a href="mailto:info@3treesrp.com">info@3treesrp.com</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">ADV Part 2 / Disclosures</a>
+  </section>
+
+  <!-- ============================================================
+       2b. RETIREMENT INCOME INTRO
+       ============================================================ -->
+  <section id="retirement-intro" class="retirement-intro-section">
+    <div class="container retirement-intro-container">
+      <div class="retirement-intro-text">
+        <span class="section-label">Your Retirement. Redefined.</span>
+        <h2 class="section-heading">Retirement Income Planning Done Right</h2>
+        <p class="retirement-intro-body">
+          Most financial advisors focus on growing your portfolio. We focus on something far more
+          important: building a system that reliably converts your savings into predictable, protected
+          income for the next 30–40 years.
+        </p>
+        <p class="retirement-intro-body">
+          Our clients don't lie awake worrying about market crashes, tax rate changes, or running out
+          of money. They sleep well — because their retirement is built on a proven, structured framework.
+        </p>
+        <blockquote class="retirement-intro-quote">
+          "The goal isn't just to retire. It's to retire with certainty."
+        </blockquote>
+      </div>
+      <div class="retirement-intro-features">
+        <div class="intro-feature-item">
+          <div class="intro-feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h4>Market-Proof Income</h4>
+            <p>Your Year 1 income is fully liquid and completely protected from any market movement.</p>
+          </div>
+        </div>
+        <div class="intro-feature-item">
+          <div class="intro-feature-icon"><i class="fas fa-leaf"></i></div>
+          <div>
+            <h4>Three Distinct Time Horizons</h4>
+            <p>NOW, SOON, and LATER buckets that work together as one unified portfolio.</p>
+          </div>
+        </div>
+        <div class="intro-feature-item">
+          <div class="intro-feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <div>
+            <h4>Tax-Smart Distribution</h4>
+            <p>Strategic Roth conversions and withdrawal sequencing to minimize lifetime taxes.</p>
+          </div>
+        </div>
+        <div class="intro-feature-item">
+          <div class="intro-feature-icon"><i class="fas fa-infinity"></i></div>
+          <div>
+            <h4>Income That Lasts 30–40 Years</h4>
+            <p>A self-sustaining system designed for the full length of a modern retirement.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container footer-bottom">
-    <p>© 2026 ThreeTrees Retirement Partners. All rights reserved.</p>
-    <p class="legal-copy">Investment advice offered through ALTITUDE CAPITAL MANAGEMENT LLC, a Securities and Exchange Commission registered investment advisor able to provide investment advice in states where it is registered, exempt, or excluded from registration. Content contained herein should not be construed as an offer or solicitation for investment advice or for the purchase or sale of any security, insurance, or other investment product. Investments involve the risk of loss, including possible loss of principal. Please consult with a qualified financial, tax, accounting, or legal professional before implementing any ideas or strategies discussed here. Content provided is obtained from sources believed to be reliable but cannot be guaranteed as to its accuracy or completeness.</p>
-  </div>
-</footer>
+  </section>
 
-</div>
-<script src="js/main.js"></script>
+  <!-- ============================================================
+       3. SECTION PREVIEW CARDS — links to all inner pages
+       ============================================================ -->
+  <section class="home-sections">
+    <div class="container">
+      <div class="home-sections-header">
+        <span class="section-label" style="display:block;margin-bottom:14px;">Everything You Need</span>
+        <h2 class="section-heading">Explore Three Trees</h2>
+        <p style="font-size:1rem;color:var(--muted-text);max-width:520px;margin:0 auto;line-height:1.8;">
+          Every aspect of your retirement, covered. Explore each section to understand the full picture.
+        </p>
+      </div>
+      <div class="home-sections-grid">
+
+        <a href="framework.html" class="home-section-card">
+          <div class="home-section-card-icon"><i class="fas fa-tree"></i></div>
+          <span class="home-section-card-label">The Framework</span>
+          <h3>The Three Trees</h3>
+          <p>Three income buckets — Now, Soon, and Later — that create a self-sustaining, market-proof retirement income system for 30–40 years.</p>
+          <span class="home-section-card-link">Explore the Framework <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="triple-shield.html" class="home-section-card">
+          <div class="home-section-card-icon"><i class="fas fa-shield-alt"></i></div>
+          <span class="home-section-card-label">Protection</span>
+          <h3>The Triple Shield</h3>
+          <p>Three layers of protection against the risks that silently destroy retirement wealth: market risk, tax risk, and spending risk.</p>
+          <span class="home-section-card-link">See the Triple Shield <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="team.html" class="home-section-card">
+          <div class="home-section-card-icon"><i class="fas fa-users"></i></div>
+          <span class="home-section-card-label">Our Team</span>
+          <h3>Michael &amp; Stephanie Cooley</h3>
+          <p>A husband-and-wife team with 20+ years of experience — two advisors, two perspectives, one singular focus: your retirement income.</p>
+          <span class="home-section-card-link">Meet Our Team <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="seminars.html" class="home-section-card">
+          <div class="home-section-card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <span class="home-section-card-label">Free Education</span>
+          <h3>Retirement Seminars</h3>
+          <p>Free, no-obligation seminars on the Three Trees, the Triple Shield, tax strategy, Social Security, and more. No products sold.</p>
+          <span class="home-section-card-link">View Seminars <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="faqs.html" class="home-section-card">
+          <div class="home-section-card-icon"><i class="fas fa-question-circle"></i></div>
+          <span class="home-section-card-label">FAQ</span>
+          <h3>Frequently Asked Questions</h3>
+          <p>Honest answers about who we are, what we charge, how we work, and whether the Three Trees Framework is the right fit for you.</p>
+          <span class="home-section-card-link">Read the FAQ <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="contact.html" class="home-section-card" style="background:var(--forest-green);border-color:var(--forest-green);">
+          <div class="home-section-card-icon" style="background:rgba(255,255,255,0.12);"><i class="fas fa-calendar-alt"></i></div>
+          <span class="home-section-card-label" style="color:rgba(201,172,106,0.9);">Take the First Step</span>
+          <h3 style="color:#fff;">Schedule a Free Call</h3>
+          <p style="color:rgba(255,255,255,0.65);">30 minutes. Free. No pitch. No obligation. Just an honest conversation about your retirement and whether we're the right fit.</p>
+          <span class="home-section-card-link" style="color:#c9ac6a;">Book Your Call <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. WHO WE SERVE
+       ============================================================ -->
+  <section id="retirement-identity" class="identity-section home-identity">
+    <div class="container identity-container">
+      <div class="identity-text">
+        <span class="section-label">Who We Serve</span>
+        <h2 class="section-heading">You've Worked Hard.<br />Now Make It Work for You.</h2>
+        <p class="identity-body">
+          We specialize in working with pre-retirees and retirees who are within 5 years of retirement
+          or recently retired — people who have done the hard work of accumulating wealth and now need
+          a clear, structured plan for what comes next.
+        </p>
+        <p class="identity-body">If you recognize yourself in any of these, we're built for you:</p>
+        <ul class="identity-list">
+          <li><i class="fas fa-check-circle"></i> You have $500K–$3M+ saved and aren't sure how to convert it to income</li>
+          <li><i class="fas fa-check-circle"></i> You're worried about what a market crash at the wrong time could do</li>
+          <li><i class="fas fa-check-circle"></i> You want to minimize taxes but aren't sure of the best strategy</li>
+          <li><i class="fas fa-check-circle"></i> You're frustrated with generic "take 4% per year" advice</li>
+          <li><i class="fas fa-check-circle"></i> You want a plan you actually understand and trust</li>
+        </ul>
+        <a href="contact.html" class="btn btn-dark-green">See If We're the Right Fit</a>
+      </div>
+      <div class="identity-image">
+        <img src="images/who-we-serve-couple.jpg" alt="Couple meeting with retirement planning expert" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. TESTIMONIALS
+       ============================================================ -->
+  <section id="testimonials" class="testimonials-section home-testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-heading">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "For the first time in my life, I understand exactly where my retirement income is coming from. The Three Trees concept changed how I think about money. I'm no longer terrified of a market crash."
+          </p>
+          <footer class="testimonial-attribution">
+            <span class="testimonial-name">— Robert &amp; Linda M.</span>
+            <span class="testimonial-detail">Retired Teachers, Ohio</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card testimonial-card-featured">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "We came in with a pile of 401(k)s, IRAs, and no real plan. They organized everything, showed us exactly how to structure our withdrawals to minimize taxes, and gave us a clear roadmap. The peace of mind is priceless."
+          </p>
+          <footer class="testimonial-attribution">
+            <span class="testimonial-name">— James &amp; Carol T.</span>
+            <span class="testimonial-detail">Engineer &amp; Nurse, Retired 2022</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "I attended the seminar not expecting much, but left completely floored. The Triple Shield framework is the most sensible retirement strategy I've ever heard. We hired them immediately."
+          </p>
+          <footer class="testimonial-attribution">
+            <span class="testimonial-name">— Patricia S.</span>
+            <span class="testimonial-detail">Business Owner, Pre-Retiree</span>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. HOME CTA STRIP
+       ============================================================ -->
+  <section style="background:var(--forest-green);padding:90px 0;">
+    <div class="container" style="text-align:center;">
+      <span class="section-label-light" style="display:block;margin-bottom:16px;">Take the First Step</span>
+      <h2 class="section-heading-light" style="margin-bottom:18px;">Your Retirement Deserves a Real Plan</h2>
+      <p style="color:rgba(255,255,255,0.68);font-size:1.08rem;max-width:580px;margin:0 auto 36px;line-height:1.85;">
+        Schedule a free 30-minute call. No products. No pitch. Just honest conversation about whether the Three Trees Framework is the right fit for you.
+      </p>
+      <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-alt"></i> Schedule a Free Call</a>
+        <a href="seminars.html" class="btn btn-outline-light">Attend a Free Seminar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. FOOTER
+       ============================================================ -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-grid">
+
+      <!-- Brand Column -->
+      <div class="footer-col footer-brand">
+        <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
+        <p class="footer-tagline">
+          Structured retirement income for the people who've earned it.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Our Approach Column -->
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Our Approach</h4>
+        <ul class="footer-links">
+          <li><a href="framework.html">The Three Trees</a></li>
+          <li><a href="triple-shield.html">The Triple Shield</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Column -->
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Company</h4>
+        <ul class="footer-links">
+          <li><a href="team.html">Michael &amp; Stephanie Cooley</a></li>
+          <li><a href="seminars.html">Free Seminars</a></li>
+          <li><a href="faqs.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal Column -->
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect Column -->
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Schedule a Free Call</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:5550000000">(555) 000-0000</a></li>
+          <li><a href="mailto:hello@threetreesretirement.com">hello@threetreesretirement.com</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold footer-cta-btn">Schedule a Call</a>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-legal container">
+      <p class="footer-legal-text">
+        &copy; 2026 Three Trees Retirement Partners. All rights reserved.
+        Investment advisory services offered through Altitude Capital Management, a Registered Investment Advisor.
+        Three Trees Retirement Partners is a DBA of Altitude Capital Management. Registration does not imply a
+        certain level of skill or training. Past performance does not guarantee future results.
+        All investments involve risk, including the possible loss of principal.
+        The Three Trees Framework and Triple Shield are proprietary planning methodologies and
+        do not guarantee investment results. This website is for informational purposes only
+        and does not constitute investment, tax, or legal advice. Please consult with a qualified
+        professional before making any financial decisions.
+      </p>
+      <div class="footer-legal-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

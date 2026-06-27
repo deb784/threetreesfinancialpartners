@@ -1,114 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Triple Shield — Three Trees Retirement Partners</title>
-  <meta name="description" content="The Triple Shield retirement protection framework.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Triple Shield Framework — Three Trees Retirement Partners</title>
+  <meta name="description" content="The Triple Shield Framework protects your retirement against the three greatest threats: market risk, tax risk, and spending risk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(145deg, #162e24 0%, #1e3a2f 55%, #254d3e 100%);
+      padding: 150px 0 80px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 110%, rgba(176,149,86,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .page-hero .container { position: relative; z-index: 1; }
+    .page-hero-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: #c9ac6a; margin-bottom: 18px; display: block; }
+    .page-hero-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 20px; }
+    .page-hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.68); max-width: 640px; margin: 0 auto 36px; line-height: 1.8; }
+    .page-hero-ctas { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; justify-content: center; margin-bottom: 22px; font-size: 0.78rem; color: rgba(255,255,255,0.45); }
+    .breadcrumb a { color: #c9ac6a; transition: color 0.2s; }
+    .breadcrumb a:hover { color: #fff; }
+    .breadcrumb i { font-size: 0.6rem; }
+  </style>
 </head>
 <body>
-<div class="page-shell">
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="nav-logo" href="index.html"><img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners"></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <ul class="nav-links"><li><a class="" href="framework.html">About Us</a></li><li><a class="" href="tax-strategy.html">Tax Strategy</a></li><li><a class="active" href="triple-shield.html">Triple Shield</a></li><li><a class="" href="seminars.html">Seminars</a></li><li><a class="" href="faqs.html">FAQ</a></li><li><a class="" href="contact.html">Contact Us</a></li><li><a class="nav-cta" href="contact.html#book">Schedule a Consultation</a></li></ul>
-  </div>
-</header>
-
-
-<main>
-  <section class="page-hero bg-ivory">
-    <div class="container split-grid">
-      <div>
-        <div class="small-label">The Triple Shield</div>
-        <h1>The Triple Shield</h1>
-        <p class="lead">Three trees working together produce three layers of protection — against the three risks most likely to derail a retirement.</p>
-        <p><strong>Retire longer, not leaner.</strong></p>
-      </div>
-      <div class="triple-shield-graphic"><img src="images/triple-shield-graphic.png" alt="The Triple Shield"></div>
-    </div>
-  </section>
-
-  <section class="section bg-ivory">
-    <div class="container narrow">
-      <div class="small-label">Why the Triple Shield Exists</div>
-      <h2>Why the Triple Shield Exists</h2>
-      <p>Most retirement portfolios are built to maximize returns. A retirement income plan has a different job: to keep delivering income across decades, through every kind of market, every kind of tax law, and every kind of life event.</p>
-      <p>When the Three Trees framework is structured correctly, it produces more than just an income plan. It produces a system of protection — a triple shield — against the specific risks that catch most retirees off guard.</p>
-    </div>
-  </section>
-
-  <section class="section bg-forest">
-    <div class="container narrow">
-      <div class="small-label">A Note on Bucket Strategies</div>
-      <h2>A Note on Bucket Strategies</h2>
-      <p>If you've researched retirement income strategies, you may have encountered the argument that bucket-based approaches are outdated. The argument has merit — but only when applied to a specific, older version of the bucket strategy.</p>
-      <p>The classic bucket approach, popularized in the 1980s and 1990s, was largely static. Buckets were established at retirement and refilled on a fixed schedule, regardless of market conditions or changing household circumstances. That approach is outdated. It oversimplifies the complexity of a 30-to-40-year retirement and doesn't respond to the realities a household will encounter along the way.</p>
-      <p>The Three Trees framework is a different generation of the structure. The bucket organization handles the question of which assets fund which years — a sequencing problem the static approach never fully solved. Layered on top of that structure are the dynamic withdrawal guardrails described in Shield 3, which flex spending up and down each year based on actual portfolio performance. The two work together: the structure provides stability and clarity, the dynamic modeling provides responsiveness.</p>
-      <p>Modern retirement income research and the leading planning software platforms have converged on this hybrid approach for the same reason we use it: structure alone is too rigid, and dynamic modeling alone lacks the visible architecture clients need to understand their own plan. Together, they produce both.</p>
-      <p><strong>Retire longer, not leaner.</strong></p>
-    </div>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container grid-3">
-      <article class="team-card"><h3>SHIELD ONE<br>Market Risk</h3><p>The first risk most retirees fear is the wrong one at the wrong time — a market downturn early in retirement, when withdrawals from a falling portfolio can permanently damage long-term outcomes.</p><p>The Three Trees structure addresses this directly. The Now and Soon Trees mean you never have to sell investments in a down market to fund your living expenses — your near-term income comes from sources insulated from market volatility. The Later Tree, in turn, has the time it needs to weather market cycles and refill the Soon Tree at favorable moments.</p><p>The result: the part of your portfolio that funds this year's income is never the part that's exposed to this year's headlines.</p></article>
-      <article class="team-card"><h3>SHIELD TWO<br>Tax Risk</h3><p>The second risk is the slow, compounding cost of unmanaged taxes. Required Minimum Distributions, Social Security taxation, IRMAA Medicare surcharges, and the year-over-year balance between pre-tax and Roth accounts all interact in ways that most retirees discover only when the bill arrives.</p><p>Shield 2 is the ongoing tax strategy work we do for every client — recalibrated annually — to manage these decisions as a system rather than a series of one-off events.</p><p><a class="link-arrow" href="tax-strategy.html">Learn more on our Learn more on our Tax Strategy page →</a></p></article>
-      <article class="team-card"><h3>SHIELD THREE<br>Spending Risk</h3><p>Most retirement advice tells you to cut back. We don't. The real risk in retirement spending isn't excess — it's miscalibration. Spend too much in good years, and the plan depletes faster than the portfolio can sustain. Spend too little — equally common, rarely discussed, and just as costly to a retiree's quality of life — and you deny yourself the very experiences your planning was meant to enable.</p><p>Shield 3 is built into the structure of every plan we deliver. Our income strategies use dynamic withdrawal guardrails — a built-in mechanism that flexes spending up when the portfolio outperforms and gently scales back when it underperforms. The goal isn't to spend less. The goal is to spend correctly — calibrated to what the portfolio can actually sustain, year by year, over a long retirement.</p><p>For clients who want additional support navigating the personal side of the retirement transition — the identity shifts, the relational changes, the question of what comes next — Stephanie Cooley, M.Ed., is available as a complementary resource. This support is optional and offered as part of the broader client relationship.</p></article>
-    </div>
-  </section>
-
-  <section class="cta-band bg-forest"><div class="container"><h2>Ready to See How the Triple Shield Would Protect Your Retirement?</h2><p>Schedule a complimentary consultation. We'll walk you through how the framework would apply to your specific situation.</p><a class="btn btn-gold" href="contact.html#book">Schedule a Consultation</a></div></section>
-</main>
-
-
-<footer class="footer bg-charcoal">
-  <div class="container footer-grid">
-    <div>
-      <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" style="height:56px;width:auto;margin-bottom:16px;">
-      <p>Retirement income planning for the distribution phase. Serving pre-retirees and retirees in Ann Arbor and Washtenaw County, Michigan.</p>
-    </div>
-    <div>
-      <h4>NAVIGATION</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="framework.html">About Us</a></li>
-        <li><a href="tax-strategy.html">Tax Strategy</a></li>
-        <li><a href="triple-shield.html">The Triple Shield</a></li>
+  <!-- HEADER -->
+  <header id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="framework.html">The Framework</a></li>
+        <li><a href="triple-shield.html" class="active">Triple Shield</a></li>
+        <li><a href="team.html">Our Team</a></li>
         <li><a href="seminars.html">Seminars</a></li>
         <li><a href="faqs.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta-btn">Schedule a Call</a></li>
       </ul>
-    </div>
-    <div>
-      <h4>RISK ASSESSMENT</h4>
-      <a class="btn btn-gold risk-btn" href="https://app.onpointeriskanalyzer.com/entryform/FD3D33E3-1408-4E26-8DBF-084356C13E58" target="_blank" rel="noopener">GET YOUR RISK SCORE</a>
-    </div>
-    <div>
-      <h4>Connect</h4>
-      <div class="text-link-list">
-        <a href="contact.html#book">Book a Meeting</a>
-        <span>825 Victors Way, Ann Arbor</span>
-        <a href="tel:7342122525">(734) 212-2525</a>
-        <a href="mailto:info@3treesrp.com">info@3treesrp.com</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">ADV Part 2 / Disclosures</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Triple Shield</span>
+      </nav>
+      <span class="page-hero-eyebrow">Beyond the Trees</span>
+      <h1 class="page-hero-title">The Triple Shield Framework</h1>
+      <p class="page-hero-sub">Three layers of protection against the risks that silently destroy retirement wealth — market risk, tax risk, and spending risk.</p>
+      <div class="page-hero-ctas">
+        <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-alt"></i> Schedule a Free Call</a>
+        <a href="framework.html" class="btn btn-outline-light">See the Three Trees</a>
       </div>
     </div>
-  </div>
-  <div class="container footer-bottom">
-    <p>© 2026 ThreeTrees Retirement Partners. All rights reserved.</p>
-    <p class="legal-copy">Investment advice offered through ALTITUDE CAPITAL MANAGEMENT LLC, a Securities and Exchange Commission registered investment advisor able to provide investment advice in states where it is registered, exempt, or excluded from registration. Content contained herein should not be construed as an offer or solicitation for investment advice or for the purchase or sale of any security, insurance, or other investment product. Investments involve the risk of loss, including possible loss of principal. Please consult with a qualified financial, tax, accounting, or legal professional before implementing any ideas or strategies discussed here. Content provided is obtained from sources believed to be reliable but cannot be guaranteed as to its accuracy or completeness.</p>
-  </div>
-</footer>
+  </section>
 
-</div>
-<script src="js/main.js"></script>
+  <!-- TRIPLE SHIELD INTRO -->
+  <section id="triple-shield" class="shield-intro-section">
+    <div class="container shield-intro-container">
+      <div class="shield-intro-text">
+        <span class="section-label">Beyond the Trees</span>
+        <h2 class="section-heading">The Triple Shield Framework</h2>
+        <p class="shield-intro-body">
+          The Three Trees handle your income structure. The Triple Shield handles
+          the three greatest threats to your retirement security.
+        </p>
+        <p class="shield-intro-body">
+          Most retirees know about market risk — but fewer understand how tax risk
+          and spending risk silently erode decades of accumulated wealth.
+          Our Triple Shield addresses all three simultaneously.
+        </p>
+        <p class="shield-intro-body shield-intro-italic">
+          "The greatest destroyer of retirement wealth isn't a market crash.
+          It's the slow, invisible erosion from taxes and unchecked spending."
+        </p>
+      </div>
+      <div class="shield-intro-graphic">
+        <div class="shield-graphic-box">
+          <img
+            src="images/triple-shield-graphic.png"
+            alt="Triple Shield — Market Risk, Tax Risk, Spending Risk"
+            class="shield-graphic-img"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHIELD CARDS -->
+  <section id="shield-cards" class="shield-cards-section">
+    <div class="container">
+      <div class="shield-cards-intro">
+        <h2 class="section-heading-light">Three Shields. One Retirement.</h2>
+        <p class="shield-cards-subtitle">Comprehensive protection against the risks that matter most</p>
+      </div>
+      <div class="shield-cards-grid">
+
+        <article class="shield-card">
+          <div class="shield-card-icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="shield-svg-icon">
+              <path d="M8 48 L20 32 L30 40 L42 20 L56 28" stroke="#2c6e6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="42" y1="20" x2="56" y2="20" stroke="#2c6e6b" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="56" y1="20" x2="56" y2="28" stroke="#2c6e6b" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="shield-card-title">Shield One</h3>
+          <h4 class="shield-card-name">Market Risk</h4>
+          <p class="shield-card-desc">Sequence risk — a major drop early in retirement can permanently derail your plan.</p>
+          <p class="shield-card-body">
+            The sequence of returns determines retirement success. A 30% market drop in Year 1 is
+            catastrophic if you're selling assets to live. Our Three Trees structure ensures you
+            never sell a depressed asset to fund your lifestyle.
+          </p>
+          <ul class="shield-card-list">
+            <li>Year 1 income is 100% liquid and unaffected by markets</li>
+            <li>10+ years of income shielded from equity volatility</li>
+            <li>Later Tree has full time horizon to recover from corrections</li>
+          </ul>
+        </article>
+
+        <article class="shield-card shield-card-featured">
+          <div class="shield-card-icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="shield-svg-icon">
+              <rect x="14" y="8" width="36" height="44" rx="3" stroke="rgba(255,255,255,0.8)" stroke-width="2.5"/>
+              <line x1="22" y1="22" x2="42" y2="22" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22" y1="30" x2="42" y2="30" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22" y1="38" x2="34" y2="38" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/>
+              <text x="18" y="20" font-size="7" font-weight="700" fill="rgba(255,255,255,0.9)" font-family="sans-serif">1040</text>
+              <circle cx="38" cy="44" r="8" stroke="rgba(255,255,255,0.8)" stroke-width="2" fill="none"/>
+              <polyline points="38,40 38,48" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/>
+              <polyline points="35,45 38,48 41,45" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="shield-card-title">Shield Two</h3>
+          <h4 class="shield-card-name">Tax Risk</h4>
+          <p class="shield-card-desc">Taxes can quietly erode your savings — over 30 years this compounds dramatically.</p>
+          <p class="shield-card-body">
+            Tax laws change. RMD rules change. Your tax bracket in retirement may be higher than
+            you think. We use strategic Roth conversion planning and tax-bracket management to
+            minimize your total lifetime tax burden.
+          </p>
+          <ul class="shield-card-list">
+            <li>Roth conversion laddering before RMDs begin</li>
+            <li>Tax-diversified withdrawal sequencing</li>
+            <li>Proactive bracket management every year</li>
+          </ul>
+        </article>
+
+        <article class="shield-card">
+          <div class="shield-card-icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="shield-svg-icon">
+              <line x1="8" y1="18" x2="56" y2="18" stroke="#2c6e6b" stroke-width="1.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+              <line x1="8" y1="46" x2="56" y2="46" stroke="#2c6e6b" stroke-width="1.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+              <text x="8" y="14" font-size="5.5" fill="#2c6e6b" font-family="sans-serif" letter-spacing="0.5">UPPER GUARDRAIL</text>
+              <text x="8" y="54" font-size="5.5" fill="#2c6e6b" font-family="sans-serif" letter-spacing="0.5">LOWER GUARDRAIL</text>
+              <polyline points="10,32 20,32 20,22 30,22 30,32 40,32 40,22 52,22 56,22" stroke="#2c6e6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <polyline points="52,22 56,19 56,25" stroke="#2c6e6b" stroke-width="2" stroke-linejoin="round" fill="#2c6e6b"/>
+            </svg>
+          </div>
+          <h3 class="shield-card-title">Shield Three</h3>
+          <h4 class="shield-card-name">Spending Risk</h4>
+          <p class="shield-card-desc">Outliving your money is a real risk — but so is spending too little and sacrificing your retirement.</p>
+          <p class="shield-card-body">
+            Guardrail-based spending strategies protect against both over-spending and under-spending.
+            We establish upper and lower guardrails so you know exactly when and how to adjust —
+            giving you confidence without unnecessary sacrifice.
+          </p>
+          <ul class="shield-card-list">
+            <li>Dynamic withdrawal guardrails, not static percentages</li>
+            <li>Pre-defined triggers for spending adjustments</li>
+            <li>Sustainable income for 30–40 year retirements</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="schedule-section" style="background: var(--cream);">
+    <div class="container schedule-container">
+      <div class="schedule-text">
+        <span class="section-label">Take the First Step</span>
+        <h2 class="section-heading" style="color:var(--forest-green);">See How the Triple Shield Protects Your Retirement</h2>
+        <p class="schedule-body" style="color:var(--body-text);">In a free 30-minute call, we'll show you exactly which risks threaten your retirement — and how the Triple Shield addresses each one for your specific situation.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-alt"></i> Schedule a Free Call</a>
+          <a href="framework.html" class="btn btn-dark-green">Explore The Three Trees</a>
+        </div>
+      </div>
+      <div class="schedule-calendar" style="display:flex;align-items:center;justify-content:center;">
+        <div style="text-align:center;padding:40px 20px;">
+          <div style="font-size:3rem;color:var(--gold);margin-bottom:16px;"><i class="fas fa-shield-alt"></i></div>
+          <p style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--forest-green);font-style:italic;max-width:280px;line-height:1.6;">"Comprehensive protection isn't optional in retirement — it's essential."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
+        <p class="footer-tagline">Structured retirement income for the people who've earned it.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Our Approach</h4>
+        <ul class="footer-links">
+          <li><a href="framework.html">The Three Trees</a></li>
+          <li><a href="triple-shield.html">The Triple Shield</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Company</h4>
+        <ul class="footer-links">
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="seminars.html">Free Seminars</a></li>
+          <li><a href="faqs.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Schedule a Free Call</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:5550000000">(555) 000-0000</a></li>
+          <li><a href="mailto:hello@threetreesretirement.com">hello@threetreesretirement.com</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold footer-cta-btn">Schedule a Call</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-legal container">
+      <p class="footer-legal-text">&copy; 2026 Three Trees Retirement Partners. All rights reserved. Investment advisory services offered through Altitude Capital Management, a Registered Investment Advisor. Past performance does not guarantee future results. All investments involve risk.</p>
+      <div class="footer-legal-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

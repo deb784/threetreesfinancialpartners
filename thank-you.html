@@ -4,309 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You — Three Trees Retirement Partners</title>
-  <meta name="description" content="Thank you for contacting Three Trees Retirement Partners. We'll be in touch shortly." />
-  <!-- Prevent search engines from indexing this confirmation page -->
-  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Thank you." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* ── Thank You page styles ── */
-    .thankyou-hero {
-      background: linear-gradient(145deg, #162e24 0%, #1e3a2f 55%, #254d3e 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 140px 20px 80px;
-      position: relative;
-      overflow: hidden;
-    }
-    /* Subtle tree silhouette decorative BG */
-    .thankyou-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 40% at 15% 80%, rgba(176,149,86,0.08) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 50% at 85% 20%, rgba(176,149,86,0.06) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .thankyou-content {
-      position: relative;
-      z-index: 1;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-    /* Checkmark circle */
-    .thankyou-icon {
-      width: 88px;
-      height: 88px;
-      background: rgba(176,149,86,0.15);
-      border: 3px solid #b09556;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 32px;
-      animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-    }
-    .thankyou-icon i {
-      font-size: 2.2rem;
-      color: #c9ac6a;
-    }
-    @keyframes popIn {
-      0%   { opacity: 0; transform: scale(0.5); }
-      100% { opacity: 1; transform: scale(1); }
-    }
-    .thankyou-eyebrow {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: #c9ac6a;
-      margin-bottom: 18px;
-      display: block;
-      animation: fadeUp 0.5s 0.2s ease both;
-    }
-    .thankyou-headline {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      font-weight: 700;
-      color: #ffffff;
-      line-height: 1.18;
-      margin-bottom: 22px;
-      animation: fadeUp 0.5s 0.3s ease both;
-    }
-    .thankyou-headline em {
-      font-style: italic;
-      color: #c9ac6a;
-    }
-    .thankyou-subtext {
-      font-size: 1.05rem;
-      line-height: 1.85;
-      color: rgba(255,255,255,0.72);
-      margin-bottom: 40px;
-      animation: fadeUp 0.5s 0.4s ease both;
-    }
-    @keyframes fadeUp {
-      0%   { opacity: 0; transform: translateY(22px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    /* What happens next card */
-    .thankyou-steps {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(201,172,106,0.25);
-      border-radius: 16px;
-      padding: 32px 36px;
-      margin-bottom: 36px;
-      text-align: left;
-      animation: fadeUp 0.5s 0.5s ease both;
-    }
-    .thankyou-steps-heading {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #c9ac6a;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.8rem;
-    }
-    .thankyou-step-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .thankyou-step {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      color: rgba(255,255,255,0.82);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-    .thankyou-step-num {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      background: #b09556;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.78rem;
-      color: #ffffff;
-      margin-top: 1px;
-    }
-    /* CTA buttons */
-    .thankyou-ctas {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-      animation: fadeUp 0.5s 0.6s ease both;
-    }
-    /* Contact info strip */
-    .thankyou-contact-strip {
-      margin-top: 50px;
-      padding-top: 30px;
-      border-top: 1px solid rgba(255,255,255,0.12);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 28px;
-      animation: fadeUp 0.5s 0.7s ease both;
-    }
-    .thankyou-contact-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255,255,255,0.5);
-      font-size: 0.85rem;
-      text-decoration: none;
-      transition: color 0.25s;
-    }
-    .thankyou-contact-item i {
-      color: #b09556;
-      font-size: 0.85rem;
-    }
-    .thankyou-contact-item:hover { color: rgba(255,255,255,0.85); }
-    /* Responsive */
-    @media (max-width: 600px) {
-      .thankyou-steps { padding: 24px 20px; }
-      .thankyou-ctas { flex-direction: column; align-items: center; }
-      .thankyou-ctas .btn { width: 100%; max-width: 300px; justify-content: center; }
-    }
-  </style>
+
+<style>
+  .page-hero {background: linear-gradient(145deg,#162e24 0%,#1e3a2f 55%,#254d3e 100%);padding:150px 0 80px;text-align:center;position:relative;overflow:hidden;}
+  .page-hero::before {content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 110%, rgba(176,149,86,0.10) 0%, transparent 70%);pointer-events:none;}
+  .page-hero .container {position:relative;z-index:1;}
+  .page-hero-eyebrow {font-size:.7rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#c9ac6a;margin-bottom:18px;display:block;}
+  .page-hero-title {font-family:'Playfair Display', Georgia, serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:20px;}
+  .page-hero-sub {font-size:1.1rem;color:rgba(255,255,255,.72);max-width:760px;margin:0 auto 36px;line-height:1.85;}
+  .page-hero-ctas {display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+  .breadcrumb {display:flex;align-items:center;gap:8px;justify-content:center;margin-bottom:22px;font-size:.78rem;color:rgba(255,255,255,.45);}
+  .breadcrumb a {color:#c9ac6a;}
+  .breadcrumb i {font-size:.6rem;}
+  .planning-section,.content-section,.light-section,.legal-content {padding:100px 0;}
+  .planning-section {background:var(--cream);}
+  .planning-grid,.content-grid,.cta-grid,.legal-grid {display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+  .photo-card img,.image-card img {width:100%;border-radius:16px;box-shadow:0 18px 60px rgba(0,0,0,.16);object-fit:cover;}
+  .content-section {background:var(--white);}
+  .light-section {background:var(--cream);}
+  .copy-body {font-size:1.02rem;line-height:1.88;color:var(--body-text);margin-bottom:18px;}
+  .copy-body-light {font-size:1.02rem;line-height:1.88;color:rgba(255,255,255,.74);margin-bottom:18px;}
+  .mini-cards-3,.mini-cards-4,.mini-cards-5 {display:grid;gap:24px;align-items:stretch;}
+  .mini-cards-3 {grid-template-columns:repeat(3,1fr);} .mini-cards-4 {grid-template-columns:repeat(4,1fr);} .mini-cards-5 {grid-template-columns:repeat(5,1fr);} 
+  .mini-card {background:#fff;border:1px solid var(--cream-border);border-radius:16px;padding:30px 24px;box-shadow:var(--shadow-card);height:100%;}
+  .mini-card h3,.mini-card h4 {font-family:var(--font-serif);color:var(--forest-green);margin-bottom:10px;line-height:1.25;}
+  .mini-card p {font-size:.95rem;line-height:1.8;color:var(--body-text);}
+  .note-panel {background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px 26px;margin-top:30px;}
+  .question-stack {display:grid;gap:14px;margin:26px 0 30px;}
+  .question-item {background:var(--cream);border:1px solid var(--cream-border);padding:18px 20px;border-radius:12px;font-family:var(--font-serif);font-size:1.08rem;color:var(--forest-green);}
+  .cta-strip {background:var(--forest-green);padding:80px 0;text-align:center;}
+  .cta-strip p {max-width:680px;margin:0 auto 30px;color:rgba(255,255,255,.72);font-size:1.04rem;line-height:1.8;}
+  .policy-panel {background:#fff;border:1px solid var(--cream-border);border-radius:18px;padding:42px;box-shadow:var(--shadow-card);}
+  .policy-panel h2 {font-family:var(--font-serif);color:var(--forest-green);font-size:1.6rem;margin:26px 0 14px;}
+  .policy-panel h3 {font-family:var(--font-serif);color:var(--forest-green);font-size:1.2rem;margin:22px 0 10px;}
+  .policy-panel p,.policy-panel li {font-size:1rem;line-height:1.85;color:var(--body-text);} .policy-panel ul {list-style:disc;padding-left:22px;display:grid;gap:8px;}
+  .site-footer .footer-col:nth-child(5) {grid-column:auto;}
+  .footer-disclosure-full {margin-top:18px;font-size:.85rem;line-height:1.8;color:rgba(255,255,255,.56);}
+  .brand-intro {font-size:1.02rem;line-height:1.8;color:rgba(255,255,255,.72);margin-bottom:18px;}
+  .contact-promises {background:var(--cream);border-bottom:1px solid var(--cream-border);} 
+  .contact-promises-grid {display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:22px 0;} 
+  .contact-promise-item {font-size:.88rem;font-weight:700;color:var(--forest-green);display:flex;gap:10px;align-items:center;justify-content:center;} 
+  .contact-promise-item i {color:var(--gold);} 
+  .calendly-mock {min-height:360px;border-radius:14px;background:linear-gradient(180deg,#fff 0%,#f5efe3 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:14px;border:1px solid var(--cream-border);} 
+  .calendly-logo {width:72px;height:72px;border-radius:50%;object-fit:cover;}
+  .legal-hero {background: linear-gradient(145deg,#162e24 0%,#1e3a2f 50%,#254d3e 100%);padding:140px 0 70px;text-align:center;}
+  .legal-hero h1 {font-family:var(--font-serif);font-size:clamp(2rem,4vw,3.1rem);color:#fff;margin-bottom:16px;} 
+  .legal-hero p {max-width:700px;margin:0 auto;color:rgba(255,255,255,.72);line-height:1.8;font-size:1.03rem;}
+  @media (max-width: 1100px){.mini-cards-5{grid-template-columns:repeat(3,1fr);} .contact-promises-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width: 900px){.planning-grid,.content-grid,.cta-grid,.legal-grid,.contact-container,.schedule-container,.identity-container,.retirement-intro-container,.hero-container,.team-card-michael,.team-card-stephanie{grid-template-columns:1fr !important;} .mini-cards-3,.mini-cards-4,.mini-cards-5,.tree-cards-grid,.seminars-cards,.footer-grid,.altitude-cards-grid{grid-template-columns:1fr !important;} .contact-promises-grid{grid-template-columns:1fr;} .process-flow{flex-direction:column;gap:20px;} .process-connector{transform:rotate(90deg);} }
+</style>
+
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header id="site-header">
-    <nav class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="framework.html">The Framework</a></li>
-        <li><a href="triple-shield.html">Triple Shield</a></li>
-        <li><a href="team.html">Our Team</a></li>
+<header id="site-header">
+  <nav class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" /></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links"><li><a href="framework.html" class="">About Us</a></li><li><a href="tax-strategy.html" class="">Tax Strategy</a></li><li><a href="triple-shield.html" class="">Triple Shield</a></li><li><a href="seminars.html" class="">Seminars</a></li><li><a href="faqs.html" class="">FAQ</a></li><li><a href="contact.html" class="active">Contact Us</a></li><li><a href="contact.html#schedule" class="nav-cta-btn">Schedule a Consultation</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+<section class="page-hero"><div class="container"><span class="page-hero-eyebrow">Thank You</span><h1 class="page-hero-title">Thank You</h1><p class="page-hero-sub">We'll respond within one business day.</p><div class="page-hero-ctas"><a href="index.html" class="btn btn-gold">Return Home</a></div></div></section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
+      <p class="footer-tagline">Retirement income planning for the distribution phase. Serving pre-retirees and retirees in Ann Arbor and Washtenaw County, Michigan.</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">About Us</a></li>
+        <li><a href="tax-strategy.html">Tax Strategy</a></li>
+        <li><a href="triple-shield.html">The Triple Shield</a></li>
         <li><a href="seminars.html">Seminars</a></li>
         <li><a href="faqs.html">FAQ</a></li>
-        <li><a href="contact.html" class="nav-cta-btn">Schedule a Call</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
-
-  <!-- THANK YOU HERO -->
-  <section class="thankyou-hero" aria-labelledby="thankyou-heading">
-    <div class="thankyou-content">
-
-      <!-- Icon -->
-      <div class="thankyou-icon" aria-hidden="true">
-        <i class="fas fa-check"></i>
-      </div>
-
-      <!-- Heading -->
-      <span class="thankyou-eyebrow">Message Received</span>
-      <h1 class="thankyou-headline" id="thankyou-heading">
-        Thank you — <em>we'll be in touch</em> soon.
-      </h1>
-      <p class="thankyou-subtext">
-        Your message has been sent successfully. A member of our team will review it and reach out to you personally — typically within <strong style="color:rgba(255,255,255,0.9);">1&ndash;2 business days</strong>.
-      </p>
-
-      <!-- What happens next -->
-      <div class="thankyou-steps">
-        <p class="thankyou-steps-heading"><i class="fas fa-list-ol" style="margin-right:7px;"></i> What Happens Next</p>
-        <ol class="thankyou-step-list">
-          <li class="thankyou-step">
-            <span class="thankyou-step-num">1</span>
-            <span>We review your message and match you with the right advisor — Michael or Stephanie Cooley, based on your situation.</span>
-          </li>
-          <li class="thankyou-step">
-            <span class="thankyou-step-num">2</span>
-            <span>You'll receive a personal reply via email or phone — whichever you prefer — within 1–2 business days.</span>
-          </li>
-          <li class="thankyou-step">
-            <span class="thankyou-step-num">3</span>
-            <span>We'll schedule your complimentary retirement income planning consultation at a time that works for you.</span>
-          </li>
-        </ol>
-      </div>
-
-      <!-- CTAs -->
-      <div class="thankyou-ctas">
-        <a href="contact.html" class="btn btn-gold">
-          <i class="fas fa-calendar-alt"></i> Book a Call Now
-        </a>
-        <a href="index.html" class="btn btn-outline-light">
-          <i class="fas fa-home"></i> Return to Home
-        </a>
-      </div>
-
-      <!-- Contact strip -->
-      <div class="thankyou-contact-strip">
-        <a href="tel:5550000000" class="thankyou-contact-item">
-          <i class="fas fa-phone"></i> (555) 000-0000
-        </a>
-        <a href="mailto:hello@threetreesretirement.com" class="thankyou-contact-item">
-          <i class="fas fa-envelope"></i> hello@threetreesretirement.com
-        </a>
-        <span class="thankyou-contact-item">
-          <i class="fas fa-map-marker-alt"></i> 825 Victors Way, Ann Arbor, MI
-        </span>
-      </div>
-
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col footer-brand">
-        <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
-        <p class="footer-tagline">"Retirement income planning done right."</p>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Legal</h4>
-        <ul class="footer-links">
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="accessibility.html">Accessibility</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Navigate</h4>
-        <ul class="footer-links">
-          <li><a href="framework.html">The Framework</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="contact.html">Schedule a Call</a></li>
-        </ul>
-      </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Risk Assessment</h4>
+      <a href="https://app.onpointeriskanalyzer.com/entryform/FD3D33E3-1408-4E26-8DBF-084356C13E58" class="btn btn-gold footer-cta-btn" target="_blank" rel="noopener">GET YOUR RISK SCORE</a>
     </div>
-    <div class="footer-divider"></div>
-    <div class="footer-legal container">
-      <p class="footer-legal-text">&copy; 2026 Three Trees Retirement Partners. All rights reserved. Investment advisory services offered through Altitude Capital Management, a Registered Investment Advisor.</p>
-      <div class="footer-legal-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-        <a href="accessibility.html">Accessibility</a>
-      </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Connect</h4>
+      <ul class="footer-links">
+        <li><a href="contact.html#schedule">Book a Meeting</a></li>
+        <li>825 Victors Way, Ann Arbor</li>
+        <li><a href="tel:7342122525">(734) 212-2525</a></li>
+        <li><a href="mailto:info@3treesrp.com">info@3treesrp.com</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">ADV Part 2 / Disclosures</a></li>
+      </ul>
     </div>
-  </footer>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-legal container">
+    <p class="footer-legal-text">© 2026 ThreeTrees Retirement Partners. All rights reserved.</p>
+    <p class="footer-disclosure-full">Investment advice offered through ALTITUDE CAPITAL MANAGEMENT LLC, a Securities and Exchange Commission registered investment advisor able to provide investment advice in states where it is registered, exempt, or excluded from registration. Content contained herein should not be construed as an offer or solicitation for investment advice or for the purchase or sale of any security, insurance, or other investment product. Investments involve the risk of loss, including possible loss of principal. Please consult with a qualified financial, tax, accounting, or legal professional before implementing any ideas or strategies discussed here. Content provided is obtained from sources believed to be reliable but cannot be guaranteed as to its accuracy or completeness.</p>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

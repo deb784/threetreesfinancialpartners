@@ -69,7 +69,7 @@
 
   /* ─── Scroll-reveal Animation ────────────────────────────── */
   const revealElements = document.querySelectorAll(
-    '.seminar-card, .testimonial-card, ' +
+    '.tree-card, .shield-card, .seminar-card, .testimonial-card, ' +
     '.team-card, .faq-item, .vision-feature-item, ' +
     '.hero-content, .hero-image, .methodology-infographic, ' +
     '.shield-intro-text, .shield-intro-graphic, .identity-text, .identity-image, ' +
@@ -112,11 +112,7 @@
   const contactForm   = document.getElementById('contact-form');
   const successMsg    = document.getElementById('form-success');
 
-
-if (contactForm) {
-  const isNetlifyForm = contactForm.hasAttribute('data-netlify');
-
-  if (!isNetlifyForm) {
+  if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
@@ -143,24 +139,26 @@ if (contactForm) {
 
       if (!valid) return;
 
+      // Show success state
       const submitBtn = contactForm.querySelector('.form-submit-btn');
       submitBtn.disabled    = true;
       submitBtn.textContent = 'Sending…';
 
+      // Simulate async submission, then redirect to thank-you page
       setTimeout(function () {
         contactForm.reset();
+        // Redirect to the dedicated thank-you confirmation page
         window.location.href = 'thank-you.html';
       }, 1200);
     });
-  }
 
-  // Remove red border on input
-  contactForm.querySelectorAll('input, select, textarea').forEach(function (field) {
-    field.addEventListener('input', function () {
-      field.style.borderColor = '';
+    // Remove red border on input
+    contactForm.querySelectorAll('input, select, textarea').forEach(function (field) {
+      field.addEventListener('input', function () {
+        field.style.borderColor = '';
+      });
     });
-  });
-}
+  }
 
   /* ─── Active Nav Highlighting ────────────────────────────── */
   const sections = document.querySelectorAll('section[id]');

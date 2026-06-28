@@ -1,33 +1,34 @@
-# Netlify configuration for Three Trees Retirement Partners
-
-[build]
-  publish = "."
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-
-[[headers]]
-  for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/css/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/js/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Clean URLs — serve index.html for all routes
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/about-us"
+to = "/framework.html"
+status = 200
+
+[[redirects]]
+from = "/tax-strategy"
+to = "/tax-strategy.html"
+status = 200
+
+[[redirects]]
+from = "/the-triple-shield"
+to = "/triple-shield.html"
+status = 200
+
+[[redirects]]
+from = "/faq"
+to = "/faqs.html"
+status = 200
+
+[[redirects]]
+from = "/privacy-policy"
+to = "/privacy.html"
+status = 200
+
+[[redirects]]
+from = "/terms-and-conditions"
+to = "/terms.html"
+status = 200
+
+[[redirects]]
+from = "/accessibility-statement"
+to = "/accessibility.html"
+status = 200

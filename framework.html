@@ -3,346 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Three Trees Framework — Three Trees Retirement Partners</title>
-  <meta name="description" content="Learn how the Three Trees Framework — Now, Soon, and Later Trees — creates a structured, market-proof retirement income system." />
+  <title>About Us — Three Trees Retirement Partners</title>
+  <meta name="description" content="About ThreeTrees Retirement Partners." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .page-hero {
-      background: linear-gradient(145deg, #162e24 0%, #1e3a2f 55%, #254d3e 100%);
-      padding: 150px 0 80px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .page-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 70% 60% at 50% 110%, rgba(176,149,86,0.10) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .page-hero .container { position: relative; z-index: 1; }
-    .page-hero-eyebrow {
-      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.28em;
-      text-transform: uppercase; color: #c9ac6a;
-      margin-bottom: 18px; display: block;
-    }
-    .page-hero-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 20px;
-    }
-    .page-hero-sub {
-      font-size: 1.1rem; color: rgba(255,255,255,0.68);
-      max-width: 640px; margin: 0 auto 36px; line-height: 1.8;
-    }
-    .page-hero-ctas { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-    .breadcrumb {
-      display: flex; align-items: center; gap: 8px;
-      justify-content: center; margin-bottom: 22px;
-      font-size: 0.78rem; color: rgba(255,255,255,0.45);
-    }
-    .breadcrumb a { color: #c9ac6a; transition: color 0.2s; }
-    .breadcrumb a:hover { color: #fff; }
-    .breadcrumb i { font-size: 0.6rem; }
-  </style>
+
+<style>
+  .page-hero {background: linear-gradient(145deg,#162e24 0%,#1e3a2f 55%,#254d3e 100%);padding:150px 0 80px;text-align:center;position:relative;overflow:hidden;}
+  .page-hero::before {content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 110%, rgba(176,149,86,0.10) 0%, transparent 70%);pointer-events:none;}
+  .page-hero .container {position:relative;z-index:1;}
+  .page-hero-eyebrow {font-size:.7rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#c9ac6a;margin-bottom:18px;display:block;}
+  .page-hero-title {font-family:'Playfair Display', Georgia, serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:20px;}
+  .page-hero-sub {font-size:1.1rem;color:rgba(255,255,255,.72);max-width:760px;margin:0 auto 36px;line-height:1.85;}
+  .page-hero-ctas {display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+  .breadcrumb {display:flex;align-items:center;gap:8px;justify-content:center;margin-bottom:22px;font-size:.78rem;color:rgba(255,255,255,.45);}
+  .breadcrumb a {color:#c9ac6a;}
+  .breadcrumb i {font-size:.6rem;}
+  .planning-section,.content-section,.light-section,.legal-content {padding:100px 0;}
+  .planning-section {background:var(--cream);}
+  .planning-grid,.content-grid,.cta-grid,.legal-grid {display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+  .photo-card img,.image-card img {width:100%;border-radius:16px;box-shadow:0 18px 60px rgba(0,0,0,.16);object-fit:cover;}
+  .content-section {background:var(--white);}
+  .light-section {background:var(--cream);}
+  .copy-body {font-size:1.02rem;line-height:1.88;color:var(--body-text);margin-bottom:18px;}
+  .copy-body-light {font-size:1.02rem;line-height:1.88;color:rgba(255,255,255,.74);margin-bottom:18px;}
+  .mini-cards-3,.mini-cards-4,.mini-cards-5 {display:grid;gap:24px;align-items:stretch;}
+  .mini-cards-3 {grid-template-columns:repeat(3,1fr);} .mini-cards-4 {grid-template-columns:repeat(4,1fr);} .mini-cards-5 {grid-template-columns:repeat(5,1fr);} 
+  .mini-card {background:#fff;border:1px solid var(--cream-border);border-radius:16px;padding:30px 24px;box-shadow:var(--shadow-card);height:100%;}
+  .mini-card h3,.mini-card h4 {font-family:var(--font-serif);color:var(--forest-green);margin-bottom:10px;line-height:1.25;}
+  .mini-card p {font-size:.95rem;line-height:1.8;color:var(--body-text);}
+  .note-panel {background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px 26px;margin-top:30px;}
+  .question-stack {display:grid;gap:14px;margin:26px 0 30px;}
+  .question-item {background:var(--cream);border:1px solid var(--cream-border);padding:18px 20px;border-radius:12px;font-family:var(--font-serif);font-size:1.08rem;color:var(--forest-green);}
+  .cta-strip {background:var(--forest-green);padding:80px 0;text-align:center;}
+  .cta-strip p {max-width:680px;margin:0 auto 30px;color:rgba(255,255,255,.72);font-size:1.04rem;line-height:1.8;}
+  .policy-panel {background:#fff;border:1px solid var(--cream-border);border-radius:18px;padding:42px;box-shadow:var(--shadow-card);}
+  .policy-panel h2 {font-family:var(--font-serif);color:var(--forest-green);font-size:1.6rem;margin:26px 0 14px;}
+  .policy-panel h3 {font-family:var(--font-serif);color:var(--forest-green);font-size:1.2rem;margin:22px 0 10px;}
+  .policy-panel p,.policy-panel li {font-size:1rem;line-height:1.85;color:var(--body-text);} .policy-panel ul {list-style:disc;padding-left:22px;display:grid;gap:8px;}
+  .site-footer .footer-col:nth-child(5) {grid-column:auto;}
+  .footer-disclosure-full {margin-top:18px;font-size:.85rem;line-height:1.8;color:rgba(255,255,255,.56);}
+  .brand-intro {font-size:1.02rem;line-height:1.8;color:rgba(255,255,255,.72);margin-bottom:18px;}
+  .contact-promises {background:var(--cream);border-bottom:1px solid var(--cream-border);} 
+  .contact-promises-grid {display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:22px 0;} 
+  .contact-promise-item {font-size:.88rem;font-weight:700;color:var(--forest-green);display:flex;gap:10px;align-items:center;justify-content:center;} 
+  .contact-promise-item i {color:var(--gold);} 
+  .calendly-mock {min-height:360px;border-radius:14px;background:linear-gradient(180deg,#fff 0%,#f5efe3 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:14px;border:1px solid var(--cream-border);} 
+  .calendly-logo {width:72px;height:72px;border-radius:50%;object-fit:cover;}
+  .legal-hero {background: linear-gradient(145deg,#162e24 0%,#1e3a2f 50%,#254d3e 100%);padding:140px 0 70px;text-align:center;}
+  .legal-hero h1 {font-family:var(--font-serif);font-size:clamp(2rem,4vw,3.1rem);color:#fff;margin-bottom:16px;} 
+  .legal-hero p {max-width:700px;margin:0 auto;color:rgba(255,255,255,.72);line-height:1.8;font-size:1.03rem;}
+  @media (max-width: 1100px){.mini-cards-5{grid-template-columns:repeat(3,1fr);} .contact-promises-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width: 900px){.planning-grid,.content-grid,.cta-grid,.legal-grid,.contact-container,.schedule-container,.identity-container,.retirement-intro-container,.hero-container,.team-card-michael,.team-card-stephanie{grid-template-columns:1fr !important;} .mini-cards-3,.mini-cards-4,.mini-cards-5,.tree-cards-grid,.seminars-cards,.footer-grid,.altitude-cards-grid{grid-template-columns:1fr !important;} .contact-promises-grid{grid-template-columns:1fr;} .process-flow{flex-direction:column;gap:20px;} .process-connector{transform:rotate(90deg);} }
+</style>
+
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header id="site-header">
-    <nav class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" />
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="framework.html" class="active">The Framework</a></li>
-        <li><a href="triple-shield.html">Triple Shield</a></li>
-        <li><a href="team.html">Our Team</a></li>
+<header id="site-header">
+  <nav class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" /></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links"><li><a href="framework.html" class="active">About Us</a></li><li><a href="tax-strategy.html" class="">Tax Strategy</a></li><li><a href="triple-shield.html" class="">Triple Shield</a></li><li><a href="seminars.html" class="">Seminars</a></li><li><a href="faqs.html" class="">FAQ</a></li><li><a href="contact.html" class="">Contact Us</a></li><li><a href="contact.html#schedule" class="nav-cta-btn">Schedule a Consultation</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+<section class="page-hero about-page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>About Us</span></div>
+    <span class="page-hero-eyebrow">About Us</span>
+    <h1 class="page-hero-title">About ThreeTrees Retirement Partners</h1>
+    <p class="page-hero-sub">A retirement income planning practice built on a single idea: structure beats prediction.</p>
+  </div>
+</section>
+<section class="content-section about-intro-section">
+  <div class="container" style="max-width:900px;">
+    <p class="copy-body">ThreeTrees Retirement Partners was founded to solve a specific problem: most retirement plans don't actually have a structure. They have a number — a target balance, a withdrawal rate, an asset allocation — but no system that tells the client exactly where each year's income will come from, how taxes will be managed, and what happens when the market moves.</p>
+    <p class="copy-body">We built ThreeTrees around a structured framework — three time-segmented buckets, three layers of protection — so our clients always know how their plan works, not just what it earned last quarter.</p>
+    <p class="copy-body">Our clients are typically pre-retirees and retirees in the Ann Arbor area with $1 million to $3 million saved. They've done the hard work of accumulating. Our job is to help them turn what they've saved into reliable, tax-efficient income for the next 20 to 40 years — because the goal of retirement planning isn't to ration what you've built. It's to use it well.</p>
+    <p class="copy-body"><strong>Retire longer, not leaner.</strong></p>
+  </div>
+</section>
+<section class="content-section about-detail-section">
+  <div class="container content-grid">
+    <div class="policy-panel about-policy-panel">
+      <span class="section-label">How We Work</span>
+      <h2 class="section-heading about-equal-heading">How We Work</h2>
+      <p class="copy-body">Every engagement starts with a written income plan. We use professional-grade modeling tools to build a customized strategy that addresses your specific income needs, tax situation, and time horizon.</p>
+      <p class="copy-body">The plan itself is built around the Three Trees framework. As the structure produces three protective shields — against market risk, against tax inefficiency, and against the behavioral pressures of a major life transition — it provides a level of resilience most retirement plans don't deliver.</p>
+      <a href="triple-shield.html" class="btn btn-gold">Learn more about the Triple Shield→</a>
+      <p class="copy-body" style="margin-top:20px;">We then manage the plan year over year — recalibrating tax strategy annually, repositioning the Soon Tree as it depletes, refilling from the Later Tree at favorable market moments, and adjusting Social Security timing decisions as your situation evolves.</p>
+    </div>
+    <div>
+      <span class="section-label">About the Name</span>
+      <h2 class="section-heading about-equal-heading">About the Name</h2>
+      <p class="copy-body">Our name reflects our framework. Three trees — Now, Soon, and Later — each rooted in a different time horizon, each with its own purpose. Together, they form a structure designed to grow stronger as your retirement unfolds.</p>
+      <hr style="border:none;border-top:1px solid var(--cream-border);margin:28px 0;">
+      <span class="section-label">Our Approach to This Work</span>
+      <h2 class="section-heading about-equal-heading">Our Approach to This Work</h2>
+      <p class="copy-body">We believe retirement planning is a stewardship responsibility — for our clients and for ourselves. We approach this work with care for the long-term wellbeing of every household we serve, and we measure our success by the quality of decisions our clients are able to make over decades, not by short-term portfolio performance.</p>
+    </div>
+  </div>
+</section><section class="cta-strip">
+  <div class="container">
+    <span class="section-label-light">Take the First Step</span>
+    <h2 class="section-heading-light">Ready to Get Started?</h2>
+    <p>Schedule a complimentary consultation to discuss your retirement situation.</p>
+    <a href="contact.html#schedule" class="btn btn-gold">Schedule a Consultation</a>
+  </div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
+      <p class="footer-tagline">Retirement income planning for the distribution phase. Serving pre-retirees and retirees in Ann Arbor and Washtenaw County, Michigan.</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">About Us</a></li>
+        <li><a href="tax-strategy.html">Tax Strategy</a></li>
+        <li><a href="triple-shield.html">The Triple Shield</a></li>
         <li><a href="seminars.html">Seminars</a></li>
         <li><a href="faqs.html">FAQ</a></li>
-        <li><a href="contact.html" class="nav-cta-btn">Schedule a Call</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a>
-        <i class="fas fa-chevron-right"></i>
-        <span>The Framework</span>
-      </nav>
-      <span class="page-hero-eyebrow">The Framework</span>
-      <h1 class="page-hero-title">The Three Trees</h1>
-      <p class="page-hero-sub">Three trees, three time horizons, one unified portfolio — a retirement income system built to last 30–40 years.</p>
-      <div class="page-hero-ctas">
-        <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-alt"></i> Schedule a Free Call</a>
-        <a href="triple-shield.html" class="btn btn-outline-light">See the Triple Shield</a>
-      </div>
     </div>
-  </section>
-
-  <!-- FRAMEWORK INFOGRAPHIC -->
-  <section id="framework" class="methodology-section">
-    <div class="container methodology-container">
-      <div class="methodology-header">
-        <span class="section-label-light">Three Time Horizons</span>
-        <h2 class="section-heading-light">How the Three Trees Work</h2>
-        <p class="methodology-subtitle">Three trees, three time horizons, one unified portfolio</p>
-      </div>
-      <div class="methodology-card">
-        <img
-          src="images/three-trees-infographic.png"
-          alt="The Three Trees — Now, Soon, Later infographic"
-          class="three-trees-infographic"
-        />
-      </div>
-      <p class="methodology-caption">
-        A well-structured portfolio grows with you — through every season of retirement
-      </p>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Risk Assessment</h4>
+      <a href="https://app.onpointeriskanalyzer.com/entryform/FD3D33E3-1408-4E26-8DBF-084356C13E58" class="btn btn-gold footer-cta-btn" target="_blank" rel="noopener">GET YOUR RISK SCORE</a>
     </div>
-  </section>
-
-  <!-- TREE DETAIL CARDS -->
-  <section id="tree-cards" class="tree-cards-section">
-    <div class="container">
-      <div class="tree-cards-grid">
-
-        <!-- TREE ONE: NOW -->
-        <article class="tree-card">
-          <div class="tree-card-image-area tree-card-image-now">
-            <img src="images/tree-now.png" alt="Now Tree — One Tree" class="tree-img-asset" />
-          </div>
-          <div class="tree-card-body">
-            <div class="tree-card-label-row">
-              <span class="tree-number-tag">T R E E &nbsp; O N E</span>
-            </div>
-            <h3 class="tree-card-name">Now Tree</h3>
-            <p class="tree-card-subtitle">Year 1 + Emergency Fund</p>
-            <div class="tree-card-type-badge">CASH &amp; MONEY MARKETS</div>
-            <p class="tree-card-tagline">Your income today. Completely protected.</p>
-            <p class="tree-card-desc">
-              Immediate liquidity. Completely immune to market volatility. Your income for today is
-              funded and protected without touching any long-term assets. A market crash tomorrow
-              does not change your income by a single dollar.
-            </p>
-            <div class="tree-card-detail">
-              <h5>WHAT IT HOLDS</h5>
-              <p>Cash, money market funds, short-term CDs, and T-bills. Zero market exposure.</p>
-            </div>
-            <div class="tree-card-detail">
-              <h5>WHAT IT PROTECTS AGAINST</h5>
-              <p>Sequence-of-returns risk. You never have to sell a depressed asset to pay your bills.</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- TREE TWO: SOON -->
-        <article class="tree-card">
-          <div class="tree-card-image-area tree-card-image-soon">
-            <img src="images/tree-soon.png" alt="Soon Tree — Two Trees" class="tree-img-asset" />
-          </div>
-          <div class="tree-card-body">
-            <div class="tree-card-label-row">
-              <span class="tree-number-tag">T R E E &nbsp; T W O</span>
-            </div>
-            <h3 class="tree-card-name">Soon Tree</h3>
-            <p class="tree-card-subtitle">Years 2–10</p>
-            <div class="tree-card-type-badge">FIXED INCOME</div>
-            <p class="tree-card-tagline">A decade of dependable income.</p>
-            <p class="tree-card-desc">
-              Protects your principal from market downturns while delivering steady, predictable
-              cash flow. The Soon Tree automatically refills the Now Tree each year.
-            </p>
-            <div class="tree-card-detail">
-              <h5>WHAT IT HOLDS</h5>
-              <p>Fixed income instruments: bonds, bond ladders, fixed annuities, CDs, and structured income products.</p>
-            </div>
-            <div class="tree-card-detail">
-              <h5>WHAT IT PROTECTS AGAINST</h5>
-              <p>Intermediate-term market volatility. Principal is shielded while income flows consistently.</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- TREE THREE: LATER -->
-        <article class="tree-card">
-          <div class="tree-card-image-area tree-card-image-later">
-            <img src="images/tree-later.png" alt="Later Tree — Three Trees" class="tree-img-asset" />
-          </div>
-          <div class="tree-card-body">
-            <div class="tree-card-label-row">
-              <span class="tree-number-tag">T R E E &nbsp; T H R E E</span>
-            </div>
-            <h3 class="tree-card-name">Later Tree</h3>
-            <p class="tree-card-subtitle">Years 11–40+</p>
-            <div class="tree-card-type-badge">TACTICAL GROWTH</div>
-            <p class="tree-card-tagline">Your legacy. Fully unleashed.</p>
-            <p class="tree-card-desc">
-              Long-term growth without panic. The Later Tree has 10+ years before you need to touch
-              it — meaning it can fully participate in market upside while the other trees fund your income.
-            </p>
-            <div class="tree-card-detail">
-              <h5>WHAT IT HOLDS</h5>
-              <p>Diversified equity portfolios, growth-oriented mutual funds, ETFs, and alternative investments.</p>
-            </div>
-            <div class="tree-card-detail">
-              <h5>WHAT IT PROTECTS AGAINST</h5>
-              <p>Inflation and longevity risk. Your purchasing power grows over decades to sustain 30–40 years.</p>
-            </div>
-          </div>
-        </article>
-
-      </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Connect</h4>
+      <ul class="footer-links">
+        <li><a href="contact.html#schedule">Book a Meeting</a></li>
+        <li>825 Victors Way, Ann Arbor</li>
+        <li><a href="tel:7342122525">(734) 212-2525</a></li>
+        <li><a href="mailto:info@3treesrp.com">info@3treesrp.com</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">ADV Part 2 / Disclosures</a></li>
+      </ul>
     </div>
-  </section>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-legal container">
+    <p class="footer-legal-text">© 2026 ThreeTrees Retirement Partners. All rights reserved.</p>
+    <p class="footer-disclosure-full">Investment advice offered through ALTITUDE CAPITAL MANAGEMENT LLC, a Securities and Exchange Commission registered investment advisor able to provide investment advice in states where it is registered, exempt, or excluded from registration. Content contained herein should not be construed as an offer or solicitation for investment advice or for the purchase or sale of any security, insurance, or other investment product. Investments involve the risk of loss, including possible loss of principal. Please consult with a qualified financial, tax, accounting, or legal professional before implementing any ideas or strategies discussed here. Content provided is obtained from sources believed to be reliable but cannot be guaranteed as to its accuracy or completeness.</p>
+  </div>
+</footer>
 
-  <!-- PROCESS FLOW -->
-  <section id="process-flow" class="process-section">
-    <div class="container">
-      <div class="process-header">
-        <span class="section-label-light">The System</span>
-        <h2 class="section-heading-light">How the Trees Work Together</h2>
-        <p class="process-subtitle">The system is self-sustaining — each tree feeds the next</p>
-      </div>
-      <div class="process-flow">
-        <div class="process-node">
-          <div class="process-node-circle">
-            <img src="images/flow-tree-node.png" alt="Later Tree" />
-          </div>
-          <h4 class="process-node-label">LATER TREE</h4>
-          <p class="process-node-sub">Years 11–40+<br />Long-Term Growth</p>
-        </div>
-        <div class="process-connector">
-          <div class="process-arrow-line"></div>
-          <i class="fas fa-chevron-right process-arrow-icon"></i>
-          <span class="process-arrow-label">Graduates over<br />time into</span>
-        </div>
-        <div class="process-node">
-          <div class="process-node-circle">
-            <img src="images/flow-tree-node.png" alt="Soon Tree" />
-          </div>
-          <h4 class="process-node-label">SOON TREE</h4>
-          <p class="process-node-sub">Years 2–10<br />Steady Income</p>
-        </div>
-        <div class="process-connector">
-          <div class="process-arrow-line"></div>
-          <i class="fas fa-chevron-right process-arrow-icon"></i>
-          <span class="process-arrow-label">Refills<br />annually</span>
-        </div>
-        <div class="process-node">
-          <div class="process-node-circle">
-            <img src="images/flow-tree-node.png" alt="Now Tree" />
-          </div>
-          <h4 class="process-node-label">NOW TREE</h4>
-          <p class="process-node-sub">Year 1 + Emergency<br />Always Liquid</p>
-        </div>
-        <div class="process-connector">
-          <div class="process-arrow-line"></div>
-          <i class="fas fa-chevron-right process-arrow-icon"></i>
-          <span class="process-arrow-label">Funds your<br />lifestyle</span>
-        </div>
-        <div class="process-node process-node-retirement">
-          <div class="process-node-circle process-node-circle-retirement">
-            <img src="images/flow-retirement-node.png" alt="Your Retirement" />
-          </div>
-          <h4 class="process-node-label process-node-label-gold">YOUR<br />RETIREMENT</h4>
-          <p class="process-node-sub">Protected Income<br />Every Year</p>
-        </div>
-      </div>
-      <p class="process-note">
-        As years pass, assets naturally graduate from Later → Soon → Now,
-        keeping your income engine running without reacting to market conditions.
-      </p>
-    </div>
-  </section>
-
-  <!-- CTA STRIP -->
-  <section class="schedule-section" style="background: var(--forest-green);">
-    <div class="container schedule-container">
-      <div class="schedule-text">
-        <span class="section-label">Ready to Build Your Plan?</span>
-        <h2 class="section-heading">See How the Three Trees Apply to Your Retirement</h2>
-        <p class="schedule-body">Every retirement is unique. In a free 30-minute call, we'll walk through how the Three Trees Framework would look for your specific situation — your assets, your timeline, your goals.</p>
-        <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-alt"></i> Schedule a Free Call</a>
-      </div>
-      <div class="schedule-calendar" style="display:flex;align-items:center;justify-content:center;">
-        <div style="text-align:center;padding:40px 20px;">
-          <img src="images/logo-square-dark.png" alt="Three Trees" style="width:90px;margin:0 auto 20px;opacity:0.7;" />
-          <p style="color:rgba(255,255,255,0.55);font-size:0.95rem;line-height:1.7;max-width:300px;">
-            Also explore the <a href="triple-shield.html" style="color:#c9ac6a;">Triple Shield</a> — the second layer of protection for your retirement.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col footer-brand">
-        <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
-        <p class="footer-tagline">Structured retirement income for the people who've earned it.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Our Approach</h4>
-        <ul class="footer-links">
-          <li><a href="framework.html">The Three Trees</a></li>
-          <li><a href="triple-shield.html">The Triple Shield</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Company</h4>
-        <ul class="footer-links">
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="seminars.html">Free Seminars</a></li>
-          <li><a href="faqs.html">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Legal</h4>
-        <ul class="footer-links">
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="accessibility.html">Accessibility</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-heading">Connect</h4>
-        <ul class="footer-links">
-          <li><a href="contact.html">Schedule a Free Call</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="tel:5550000000">(555) 000-0000</a></li>
-          <li><a href="mailto:hello@threetreesretirement.com">hello@threetreesretirement.com</a></li>
-        </ul>
-        <a href="contact.html" class="btn btn-gold footer-cta-btn">Schedule a Call</a>
-      </div>
-    </div>
-    <div class="footer-divider"></div>
-    <div class="footer-legal container">
-      <p class="footer-legal-text">&copy; 2026 Three Trees Retirement Partners. All rights reserved. Investment advisory services offered through Altitude Capital Management, a Registered Investment Advisor. Past performance does not guarantee future results. All investments involve risk.</p>
-      <div class="footer-legal-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-        <a href="accessibility.html">Accessibility</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

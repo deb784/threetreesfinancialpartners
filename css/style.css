@@ -226,7 +226,7 @@ ul { list-style: none; }
 .hero-section {
   background: linear-gradient(145deg, #162e24 0%, var(--forest-green) 45%, var(--forest-mid) 100%);
   padding-top: 82px; /* nav height offset */
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
 }
@@ -2074,5 +2074,191 @@ details[open] .faq-question span { color: var(--gold-light); }
   .tax-card-grid .mini-card:nth-child(4),
   .tax-card-grid .mini-card:nth-child(5) {
     grid-column: auto;
+  }
+}
+
+
+
+/* ROUND 2 PUNCH LIST OVERRIDES */
+.risk-score-band {
+  background: #3F5540;
+  padding: 86px 0;
+}
+.risk-score-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 64px;
+  align-items: center;
+}
+.risk-score-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.risk-score-microcopy {
+  color: #F5F1E8;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+.risk-score-visual {
+  display: flex;
+  justify-content: center;
+}
+.sample-risk-gauge {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: conic-gradient(#C09C60 0 250deg, rgba(245,241,232,0.12) 250deg 360deg);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.24);
+  position: relative;
+}
+.sample-risk-gauge::before {
+  content: '';
+  position: absolute;
+  inset: 28px;
+  border-radius: 50%;
+  background: #F5F1E8;
+}
+.sample-risk-gauge-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3F5540;
+  text-align: center;
+}
+.sample-risk-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: #788454;
+  margin-bottom: 10px;
+}
+.sample-risk-number {
+  font-family: var(--font-serif);
+  font-size: 4.2rem;
+  line-height: 1;
+  color: #3F5540;
+}
+.sample-risk-caption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--forest-green);
+}
+.greminders-embed {
+  padding: 20px;
+  background: var(--cream);
+}
+.greminders-embed iframe {
+  width: 100%;
+  min-height: 760px;
+  border: 0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--cream-border);
+}
+@media (max-width: 1100px) {
+  .risk-score-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .sample-risk-gauge {
+    width: 260px;
+    height: 260px;
+  }
+  .sample-risk-gauge::before {
+    inset: 22px;
+  }
+  .sample-risk-number {
+    font-size: 3.4rem;
+  }
+  .greminders-embed iframe {
+    min-height: 640px;
+  }
+}
+
+
+/* TARGETED ANNOTATED CORRECTIONS */
+.social-security-grid {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 64px;
+  align-items: start;
+}
+.social-security-card {
+  width: 100%;
+  max-width: 338px;
+  justify-self: end;
+  align-self: start;
+  padding: 22px 20px 18px;
+  margin-top: 88px;
+}
+.social-security-card .section-label { margin-bottom: 8px; }
+.social-security-card .schedule-list { gap: 10px; margin-top: 8px; }
+.social-security-card .schedule-list li {
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+.social-security-card-button-wrap {
+  margin-top: 18px;
+}
+.social-security-card .btn {
+  width: 100%;
+  justify-content: center;
+}
+.risk-score-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 28px;
+}
+.risk-score-actions .btn {
+  text-transform: uppercase;
+}
+.risk-score-microcopy {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #F5F1E8;
+  text-align: left;
+}
+#upcoming-events .mini-cards-3 {
+  align-items: stretch;
+}
+#upcoming-events .mini-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: left;
+}
+#upcoming-events .mini-card .btn {
+  margin-top: auto !important;
+  align-self: flex-start;
+}
+#upcoming-events .seminar-topic {
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .social-security-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .social-security-card {
+    justify-self: start;
+    max-width: 360px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .social-security-card {
+    max-width: 100%;
   }
 }

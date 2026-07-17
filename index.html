@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three Trees Retirement Partners — Retirement Income Planning</title>
+  <meta name="description" content="Retirement income planning for Ann Arbor-area pre-retirees and retirees." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+<style>
+  .page-hero {background: linear-gradient(145deg,#162e24 0%,#1e3a2f 55%,#254d3e 100%);padding:150px 0 80px;text-align:center;position:relative;overflow:hidden;}
+  .page-hero::before {content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 110%, rgba(176,149,86,0.10) 0%, transparent 70%);pointer-events:none;}
+  .page-hero .container {position:relative;z-index:1;}
+  .page-hero-eyebrow {font-size:.7rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#c9ac6a;margin-bottom:18px;display:block;}
+  .page-hero-title {font-family:'Playfair Display', Georgia, serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:20px;}
+  .page-hero-sub {font-size:1.1rem;color:rgba(255,255,255,.72);max-width:760px;margin:0 auto 36px;line-height:1.85;}
+  .page-hero-ctas {display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+  .breadcrumb {display:flex;align-items:center;gap:8px;justify-content:center;margin-bottom:22px;font-size:.78rem;color:rgba(255,255,255,.45);}
+  .breadcrumb a {color:#c9ac6a;}
+  .breadcrumb i {font-size:.6rem;}
+  .planning-section,.content-section,.light-section,.legal-content {padding:100px 0;}
+  .planning-section {background:var(--cream);}
+  .planning-grid,.content-grid,.cta-grid,.legal-grid {display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+  .photo-card img,.image-card img {width:100%;border-radius:16px;box-shadow:0 18px 60px rgba(0,0,0,.16);object-fit:cover;}
+  .content-section {background:var(--white);}
+  .light-section {background:var(--cream);}
+  .copy-body {font-size:1.02rem;line-height:1.88;color:var(--body-text);margin-bottom:18px;}
+  .copy-body-light {font-size:1.02rem;line-height:1.88;color:rgba(255,255,255,.74);margin-bottom:18px;}
+  .mini-cards-3,.mini-cards-4,.mini-cards-5 {display:grid;gap:24px;align-items:stretch;}
+  .mini-cards-3 {grid-template-columns:repeat(3,1fr);} .mini-cards-4 {grid-template-columns:repeat(4,1fr);} .mini-cards-5 {grid-template-columns:repeat(5,1fr);} 
+  .mini-card {background:#fff;border:1px solid var(--cream-border);border-radius:16px;padding:30px 24px;box-shadow:var(--shadow-card);height:100%;}
+  .mini-card h3,.mini-card h4 {font-family:var(--font-serif);color:var(--forest-green);margin-bottom:10px;line-height:1.25;}
+  .mini-card p {font-size:.95rem;line-height:1.8;color:var(--body-text);}
+  .note-panel {background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px 26px;margin-top:30px;}
+  .question-stack {display:grid;gap:14px;margin:26px 0 30px;}
+  .question-item {background:var(--cream);border:1px solid var(--cream-border);padding:18px 20px;border-radius:12px;font-family:var(--font-serif);font-size:1.08rem;color:var(--forest-green);}
+  .cta-strip {background:var(--forest-green);padding:80px 0;text-align:center;}
+  .cta-strip p {max-width:680px;margin:0 auto 30px;color:rgba(255,255,255,.72);font-size:1.04rem;line-height:1.8;}
+  .policy-panel {background:#fff;border:1px solid var(--cream-border);border-radius:18px;padding:42px;box-shadow:var(--shadow-card);}
+  .policy-panel h2 {font-family:var(--font-serif);color:var(--forest-green);font-size:1.6rem;margin:26px 0 14px;}
+  .policy-panel h3 {font-family:var(--font-serif);color:var(--forest-green);font-size:1.2rem;margin:22px 0 10px;}
+  .policy-panel p,.policy-panel li {font-size:1rem;line-height:1.85;color:var(--body-text);} .policy-panel ul {list-style:disc;padding-left:22px;display:grid;gap:8px;}
+  .site-footer .footer-col:nth-child(5) {grid-column:auto;}
+  .footer-disclosure-full {margin-top:18px;font-size:.85rem;line-height:1.8;color:rgba(255,255,255,.56);}
+  .brand-intro {font-size:1.02rem;line-height:1.8;color:rgba(255,255,255,.72);margin-bottom:18px;}
+  .contact-promises {background:var(--cream);border-bottom:1px solid var(--cream-border);} 
+  .contact-promises-grid {display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:22px 0;} 
+  .contact-promise-item {font-size:.88rem;font-weight:700;color:var(--forest-green);display:flex;gap:10px;align-items:center;justify-content:center;} 
+  .contact-promise-item i {color:var(--gold);} 
+  .calendly-mock {min-height:360px;border-radius:14px;background:linear-gradient(180deg,#fff 0%,#f5efe3 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:14px;border:1px solid var(--cream-border);} 
+  .calendly-logo {width:72px;height:72px;border-radius:50%;object-fit:cover;}
+  .legal-hero {background: linear-gradient(145deg,#162e24 0%,#1e3a2f 50%,#254d3e 100%);padding:140px 0 70px;text-align:center;}
+  .legal-hero h1 {font-family:var(--font-serif);font-size:clamp(2rem,4vw,3.1rem);color:#fff;margin-bottom:16px;} 
+  .legal-hero p {max-width:700px;margin:0 auto;color:rgba(255,255,255,.72);line-height:1.8;font-size:1.03rem;}
+  @media (max-width: 1100px){.mini-cards-5{grid-template-columns:repeat(3,1fr);} .contact-promises-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width: 900px){.planning-grid,.content-grid,.cta-grid,.legal-grid,.contact-container,.schedule-container,.identity-container,.retirement-intro-container,.hero-container,.team-card-michael,.team-card-stephanie{grid-template-columns:1fr !important;} .mini-cards-3,.mini-cards-4,.mini-cards-5,.tree-cards-grid,.seminars-cards,.footer-grid,.altitude-cards-grid{grid-template-columns:1fr !important;} .contact-promises-grid{grid-template-columns:1fr;} .process-flow{flex-direction:column;gap:20px;} .process-connector{transform:rotate(90deg);} }
+
+  /* Targeted corrections only */
+  .social-security-grid {display:grid;grid-template-columns:1.16fr .84fr;gap:70px;align-items:start;}
+  .social-security-card {width:100%;max-width:312px;justify-self:end;align-self:start;height:auto !important;min-height:0 !important;padding:18px 18px 16px;margin-top:56px;border-radius:12px;box-shadow:0 16px 44px rgba(0,0,0,.14);}
+  .social-security-card .section-label {margin-bottom:8px;}
+  .social-security-card .schedule-list {gap:8px;margin-top:6px;}
+  .social-security-card .schedule-list li {font-size:.82rem;line-height:1.4;}
+  .social-security-card-button-wrap {margin-top:14px;}
+  .social-security-card .btn {width:100%;justify-content:center;padding:12px 14px;font-size:.72rem;}
+  .identity-container {display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center;}
+  .identity-body {font-size:1.02rem;line-height:1.82;color:var(--body-text);margin-bottom:22px;}
+  .identity-image {display:flex;justify-content:flex-end;align-items:center;}
+  .identity-image img {width:100%;max-width:430px;display:block;border-radius:14px;box-shadow:0 18px 60px rgba(0,0,0,.16);object-fit:cover;}
+  .identity-image {opacity:1 !important;transform:none !important;}
+  .risk-score-band {background:#3F5540;padding:88px 0;}
+  .risk-score-grid {display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;}
+  .risk-score-band .section-label-light {color:#C09C60;}
+  .risk-score-band .section-heading-light {margin-bottom:18px;}
+  .risk-score-band .copy-body-light {max-width:700px;color:#F5F1E8;}
+  .risk-score-actions {display:flex;flex-direction:column;align-items:flex-start;gap:0;margin-top:28px;}
+  .risk-score-actions .btn {text-transform:uppercase;}
+  .risk-score-microcopy {margin-top:10px;color:#F5F1E8;font-size:.82rem;line-height:1.45;text-align:left;}
+  .risk-score-visual {display:flex;justify-content:center;}
+  .sample-risk-gauge {width:260px;height:260px;border-radius:50%;padding:16px;background:conic-gradient(#C09C60 0 72%, #788454 72% 100%);box-shadow:0 16px 44px rgba(0,0,0,.18);}
+  .sample-risk-gauge-inner {width:100%;height:100%;border-radius:50%;background:#F5F1E8;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#1e3a2f;}
+  .sample-risk-label {font-size:.72rem;letter-spacing:.22em;font-weight:700;color:#788454;margin-bottom:10px;}
+  .sample-risk-number {font-family:var(--font-serif);font-size:4rem;line-height:1;color:#1e3a2f;}
+  .sample-risk-caption {font-size:1rem;color:#3F5540;margin-top:8px;}
+  @media (max-width: 900px){.social-security-grid,.risk-score-grid,.identity-container{grid-template-columns:1fr !important;gap:34px;} .social-security-card{justify-self:start;max-width:360px;margin-top:0;} .identity-image{justify-content:flex-start;} .risk-score-band{padding:72px 0;}}
+  @media (max-width: 640px){.social-security-card{max-width:100%;} .identity-image img{max-width:100%;} .sample-risk-gauge{width:220px;height:220px;} .sample-risk-number{font-size:3.4rem;}}
+
+</style>
+
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="images/logo-horizontal.png" alt="Three Trees Retirement Partners" /></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links"><li><a href="framework.html" class="">About Us</a></li><li><a href="tax-strategy.html" class="">Tax Strategy</a></li><li><a href="triple-shield.html" class="">Triple Shield</a></li><li><a href="seminars.html" class="">Seminars</a></li><li><a href="faqs.html" class="">FAQ</a></li><li><a href="contact.html" class="">Contact Us</a></li><li><a href="contact.html#schedule" class="nav-cta-btn">Schedule a Consultation</a></li></ul>
+  </nav>
+</header>
+
+
+<main>
+<section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Three Trees Retirement Partners</p>
+      <h1 class="hero-headline">Plan for the Life You've Worked Hard to Achieve</h1>
+      <p class="hero-subtext">Tax-efficient retirement income planning for Ann Arbor-area pre-retirees and retirees with $1M to $3M in savings.</p>
+      <div class="hero-ctas">
+        <a href="contact.html#schedule" class="btn btn-gold">Schedule a Consultation</a>
+        <a href="seminars.html" class="btn btn-outline-light">Attend a Free Seminar</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-photo-wrap"><img src="images/michael-stephanie-cooley.jpg" alt="Michael and Stephanie Cooley — Three Trees Retirement Partners" /></div>
+      <div class="hero-image-caption"><span class="cred-name">Michael &amp; Stephanie Cooley</span><span class="cred-badges">CHFC® RICP® NSSA® | M.ED.</span></div>
+    </div>
+  </div>
+</section>
+<section class="planning-section">
+  <div class="container planning-grid">
+    <div class="photo-card"><img src="images/who-we-serve-couple.jpg" alt="Three Trees client conversation" /></div>
+    <div>
+      <span class="section-label">About Us</span>
+      <h2 class="section-heading">Planning Today, Preparing for Tomorrow, Prospering the Future</h2>
+      <p class="copy-body">At ThreeTrees Retirement Partners, we believe retirement is about more than just having enough money, it's about living the life you've been working toward for decades.</p>
+      <p class="copy-body">We help people transition into and through retirement with both financial confidence and personal clarity. Whether you're five years from retirement or already enjoying it, we guide you through the financial decisions AND the life decisions that make retirement meaningful</p>
+      <p class="copy-body">Most of our clients are between 55 and 70, have saved $1-3 million, and want to know their money will last while living purposefully and fully in this next chapter.</p>
+    </div>
+  </div>
+</section>
+<section class="methodology-section"><div class="container methodology-container"><div class="methodology-header"><span class="section-label-light">Framework</span><h2 class="section-heading-light">The Three Trees Framework</h2><p class="methodology-subtitle">A structured approach to retirement income — so you always know where your next paycheck is coming from.</p></div><p class="copy-body-light" style="max-width:900px;margin:0 auto 34px;">Most retirement plans treat your savings as a single pile of money to draw from. We organize yours into three distinct time horizons — three trees — each with its own purpose, its own asset type, and its own role in producing reliable income</p><div class="methodology-card"><img src="images/three-trees-infographic.png" alt="The Three Trees — Now, Soon, Later infographic" class="three-trees-infographic" /></div></div></section>
+<section class="tree-cards-section"><div class="container"><div class="tree-cards-grid">
+<article class="tree-card"><div class="tree-card-image-area tree-card-image-now"><img src="images/tree-now.png" alt="Now Tree" class="tree-img-asset" /></div><div class="tree-card-body"><div class="tree-card-label-row"><span class="tree-number-tag">T R E E &nbsp; O N E</span></div><h3 class="tree-card-name">Now Tree</h3><p class="tree-card-subtitle">Year 1 + Permanent Emergency Fund</p><p class="tree-card-desc">Cash &amp; money market funds. Always liquid, always available, immune to market volatility. This is the year you're living right now.</p></div></article>
+<article class="tree-card"><div class="tree-card-image-area tree-card-image-soon"><img src="images/tree-soon.png" alt="Soon Tree" class="tree-img-asset" /></div><div class="tree-card-body"><div class="tree-card-label-row"><span class="tree-number-tag">T R E E &nbsp; T W O</span></div><h3 class="tree-card-name">Soon Tree</h3><p class="tree-card-subtitle">Years 2 – 10</p><p class="tree-card-desc">A laddered foundation built to deliver dependable income for the next decade — designed to participate in market upside while protecting your principal from market downturns. The result: a stable income foundation that doesn't sacrifice long-term growth.</p></div></article>
+<article class="tree-card"><div class="tree-card-image-area tree-card-image-later"><img src="images/tree-later.png" alt="Later Tree" class="tree-img-asset" /></div><div class="tree-card-body"><div class="tree-card-label-row"><span class="tree-number-tag">T R E E &nbsp; T H R E E</span></div><h3 class="tree-card-name">Later Tree</h3><p class="tree-card-subtitle">Years 11 – 40+</p><p class="tree-card-desc">Tactical growth investments that have time to weather market cycles. Manages long-term wealth and refills the Soon Tree at favorable market moments.</p></div></article>
+</div></div></section>
+<section class="risk-score-band">
+  <div class="container risk-score-grid">
+    <div>
+      <span class="section-label-light">SHIELD 1 · MARKET RISK</span>
+      <h2 class="section-heading-light">How Much Risk Is Hiding in Your Portfolio?</h2>
+      <p class="copy-body-light">Most people are carrying more downside than they realize. Get your personalized Risk Score in about five minutes — a clear number showing how your investments might hold up when the market turns.</p>
+      <div class="risk-score-actions">
+        <a href="https://app.onpointeriskanalyzer.com/entryform/FD3D33E3-1408-4E26-8DBF-084356C13E58" class="btn btn-gold" target="_blank" rel="noopener">GET YOUR RISK SCORE →</a>
+        <div class="risk-score-microcopy">Free · No obligation · About five minutes</div>
+      </div>
+    </div>
+    <div class="risk-score-visual">
+      <div class="sample-risk-gauge">
+        <div class="sample-risk-gauge-inner">
+          <span class="sample-risk-label">SAMPLE</span>
+          <span class="sample-risk-number">72</span>
+          <span class="sample-risk-caption">Risk Score</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="light-section"><div class="container content-grid"><div><span class="section-label">Credentials</span><h2 class="section-heading">Built for Retirement Income</h2><p class="copy-body">The credentials behind ThreeTrees were chosen specifically for this work. Michael holds three designations from The American College of Financial Services — each focused on the planning challenges that matter once you stop earning a paycheck.</p><p class="copy-body"><strong>ChFC® — Chartered Financial Consultant</strong><br><strong>RICP® — Retirement Income Certified Professional</strong><br><strong>NSSA® — National Social Security Advisor</strong></p><p class="copy-body">This is a different toolkit than the generalist CFP credential. It's purpose-built for the question most retirement advisors don't fully solve: how to turn what you've saved into reliable, tax-efficient income that lasts.</p></div><div class="shield-graphic-box"><img src="images/triple-shield-graphic.png" alt="Triple Shield — Market, Tax, and Spending risk" class="shield-graphic-img" /></div></div></section>
+<section class="process-section"><div class="container content-grid social-security-grid"><div><span class="section-label-light">Social Security</span><h2 class="section-heading-light">Get Your Social Security Decision Right</h2><p class="copy-body-light">Social Security is one of the most important financial decisions you'll make in retirement—and most people get it wrong. Filing at the wrong time can cost you tens of thousands of dollars over your lifetime.</p><p class="copy-body-light">But it's not just about the numbers. When you file affects your cash flow, your flexibility, and your peace of mind in those critical early retirement years.</p><p class="copy-body-light">We provide personalized Social Security filing analysis within the context of your complete retirement picture—not just "what maximizes dollars" but "what supports the life you want to live."</p></div><div class="mini-card social-security-card"><span class="section-label">Topics we help you navigate</span><ul class="schedule-list"><li><i class="fas fa-check"></i> When to claim for maximum lifetime benefit</li><li><i class="fas fa-check"></i> How spousal and survivor benefits work</li><li><i class="fas fa-check"></i> Tax implications of Social Security income</li></ul><div class="social-security-card-button-wrap"><a href="seminars.html" class="btn btn-gold">Attend OUR SOCIAL SECURITY Seminar</a></div></div></div></section>
+<section class="identity-section"><div class="container identity-container"><div><span class="section-label">Who We Serve</span><h2 class="section-heading">Who We Serve</h2><p class="identity-body">Most of our clients are between 55 and 70, have saved $1 million to $3 million, and want clear answers to three questions:</p><div class="question-stack"><div class="question-item">When can I retire?</div><div class="question-item">Will my money last?</div><div class="question-item">How do I keep more of what I've earned from going to taxes?</div></div></div><div class="photo-card identity-image" style="background-image:url('images/who-we-serve-couple.jpg');background-size:cover;background-position:center;border-radius:14px;min-height:320px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.16);"><img src="images/who-we-serve-couple.jpg" alt="Three Trees client conversation" style="width:100%;height:100%;display:block;object-fit:cover;" /></div></div></section>
+<section class="light-section"><div class="container content-grid"><div class="image-card"><img src="images/michael-cooley.jpg" alt="Michael Cooley" /></div><div><span class="section-label">Meet Michael Cooley ChFC®, RICP®, NSSA®</span><h2 class="section-heading">Meet Michael Cooley ChFC®, RICP®, NSSA®</h2><p class="copy-body">Michael is the founder and lead advisor at ThreeTrees Retirement Partners. He brings advanced retirement income credentials and a structured framework that helps clients see exactly how their financial life works — both today and over the decades ahead.</p><a href="contact.html#schedule" class="btn btn-gold">Schedule a Meeting</a></div></div></section>
+<section class="cta-strip"><div class="container"><span class="section-label-light">Take the First Step</span><h2 class="section-heading-light">Ready to See What Your Retirement Plan Should Look Like?</h2><p>Schedule a complimentary consultation to explore how the Three Trees framework applies to your specific situation. Most first conversations take 30 minutes.</p><a href="contact.html#schedule" class="btn btn-gold">Schedule a Consultation</a></div></section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <img src="images/logo-square-dark.png" alt="Three Trees Retirement Partners" class="footer-logo" />
+      <p class="footer-tagline">Retirement income planning for the distribution phase. Serving pre-retirees and retirees in Ann Arbor and Washtenaw County, Michigan.</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="framework.html">About Us</a></li>
+        <li><a href="tax-strategy.html">Tax Strategy</a></li>
+        <li><a href="triple-shield.html">The Triple Shield</a></li>
+        <li><a href="seminars.html">Seminars</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Risk Assessment</h4>
+      <a href="https://app.onpointeriskanalyzer.com/entryform/FD3D33E3-1408-4E26-8DBF-084356C13E58" class="btn btn-gold footer-cta-btn" target="_blank" rel="noopener">GET YOUR RISK SCORE</a>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-heading">Connect</h4>
+      <ul class="footer-links">
+        <li><a href="contact.html#schedule">Book a Meeting</a></li>
+        <li>825 Victors Way, Ann Arbor</li>
+        <li><a href="tel:7342122525">(734) 212-2525</a></li>
+        <li><a href="mailto:info@3treesrp.com">info@3treesrp.com</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">ADV Part 2 / Disclosures</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-legal container">
+    <p class="footer-legal-text">© 2026 ThreeTrees Retirement Partners. All rights reserved.</p>
+    <p class="footer-disclosure-full">Investment advice offered through ALTITUDE CAPITAL MANAGEMENT LLC, a Securities and Exchange Commission registered investment advisor able to provide investment advice in states where it is registered, exempt, or excluded from registration. Content contained herein should not be construed as an offer or solicitation for investment advice or for the purchase or sale of any security, insurance, or other investment product. Investments involve the risk of loss, including possible loss of principal. Please consult with a qualified financial, tax, accounting, or legal professional before implementing any ideas or strategies discussed here. Content provided is obtained from sources believed to be reliable but cannot be guaranteed as to its accuracy or completeness.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

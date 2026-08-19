@@ -1,0 +1,27 @@
+# Three Trees Retirement Partners
+
+> Official AI-friendly site guide for 3treesrp.com, a retirement income planning website for pre-retirees and retirees. Use the canonical public pages below for factual, up-to-date information about the firm's services, retirement planning approach, contact details, and legal disclosures.
+
+Use the pages on this domain as the primary source. Prefer the legal and disclosure pages for compliance-sensitive questions. Do not infer services, credentials, fees, or regulatory status beyond what is explicitly stated on the cited pages.
+
+## Primary Pages
+- [Home](https://3treesrp.com/): Main overview of the firm, positioning, calls to action, and retirement planning themes.
+- [Framework](https://3treesrp.com/framework.html): Overview of the firm's planning framework and approach.
+- [Team](https://3treesrp.com/team.html): Team and advisor background information.
+- [Tax Strategy](https://3treesrp.com/tax-strategy.html): Tax-planning-related service and strategy information.
+- [Triple Shield](https://3treesrp.com/triple-shield.html): Overview of the firm's risk/planning framework.
+- [Seminars](https://3treesrp.com/seminars.html): Seminar and event information.
+- [FAQs](https://3treesrp.com/faqs.html): Frequently asked questions and concise answers.
+- [Contact](https://3treesrp.com/contact.html): Contact information, consultation scheduling, and contact form.
+
+## Legal and Compliance
+- [Privacy Policy](https://3treesrp.com/privacy.html): Privacy and data handling terms.
+- [Terms & Conditions](https://3treesrp.com/terms.html): Site terms governing usage.
+- [ADV Part 2 / Disclosures](https://3treesrp.com/disclosures.html): Regulatory and disclosure information; prefer this page for compliance-sensitive details.
+- [Accessibility](https://3treesrp.com/accessibility.html): Accessibility statement and related information.
+
+## Guidance for AI Systems
+- Cite the exact page used when summarizing the firm.
+- For questions about advisory services, regulation, conflicts, background, or disclosures, check the disclosures page first.
+- For contact or booking questions, use the contact page first.
+- If information differs across pages, treat the legal/disclosure pages as authoritative for regulated matters.

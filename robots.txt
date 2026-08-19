@@ -1,0 +1,38 @@
+# robots.txt for https://3treesrp.com
+# AI-search-friendly version:
+# - Allows general search crawling
+# - Blocks model-training / AI-use training tokens where supported
+# - Allows AI search/indexing crawlers
+
+# Default: allow normal crawlers and search engines
+User-agent: *
+Allow: /
+
+# OpenAI: block training, allow search
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic: block training, allow search
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Google AI-use control token: block Gemini training/grounding use
+# This does not affect Google Search indexing.
+User-agent: Google-Extended
+Disallow: /
+
+# Perplexity search crawler: allow
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl: block broad dataset crawling/training reuse
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://3treesrp.com/sitemap.xml
